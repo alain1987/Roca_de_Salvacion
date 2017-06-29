@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Roca de Salvacion</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="../../Content/css/site.css" />
+    <link href="/Content/css/angular-material.css" rel="stylesheet" />
+    <link href="/Content/css/angular-material.layout-attributes.css" rel="stylesheet" />
+    <link href="/Content/css/angular-material.layout-attributes.min.css" rel="stylesheet" />
+    <link href="/Content/css/angular-material.layouts.css" rel="stylesheet" />
+    <link href="/Content/css/angular-material.layouts.ie_fixes.css" rel="stylesheet" />
+    <link href="/Content/css/angular-material.layouts.min.css" rel="stylesheet" />
+    <link href="/Content/css/angular-material.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Content/css/loading-bar.min.css" />
+    <link rel="shortcut icon" href="#">
+
+
+</head>
+<body id="rcs" data-spy="scroll" data-target=".navbar" data-offset="60">
+    
+    
+        <div ng-view="" class="{{animateClass}}"></div>
+    
+
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHR7B0qV8d_OvlUesDNRAl34EGrsq7he4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-touch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.7/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <!--<script src="../../Scripts/angular-aria/angular-aria.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-aria.min.js"></script>
+
+    <!--<script src="../../Scripts/angular-material/angular-material.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script> 
+    <script src="../../Scripts/angular-local-storage.min.js"></script>
+    <script src="../../Scripts/loading-bar.min.js"></script>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.js"></script>
+
+    <!--Call to files-->
+    <script type="text/javascript" src="/js/modules/app.js"></script>
+    <script type="text/javascript" src="/js/services/authInterceptorService.js"></script>
+    <script type="text/javascript" src="/js/controllers/indexController.js"></script>
+    <script type="text/javascript" src="/js/services/infService.js"></script>
+    <script type="text/javascript" src="/js/services/tokenManagerService.js"></script>
+    <script type="text/javascript" src="/js/controllers/indexController.js"></script>
+    <script type="text/javascript" src="/js/controllers/homeController.js"></script>
+    <script type="text/javascript" src="/js/controllers/loginController.js"></script>
+    <script type="text/javascript" src="/js/controllers/signupController.js"></script>
+    <script type="text/javascript" src="/js/controllers/infController.js"></script>
+    <script type="text/javascript" src="/js/controllers/refreshController.js"></script>
+    <script type="text/javascript" src="/js/controllers/rolecontroller.js"></script>
+    <script type="text/javascript" src="/js/controllers/logoutController.js"></script>
+    <script type="text/javascript" src="/js/controllers/forgotPasswordController.js"></script>
+    <script type="text/javascript" src="/js/services/passwordService.js"></script>
+    <script type="text/javascript" src="/js/services/usersService.js"></script>
+    <script type="text/javascript" src="/js/services/roleService.js"></script>
+    <script type="text/javascript" src="/js/controllers/rolecontroller.js"></script>
+    <script type="text/javascript" src="/js/controllers/unauthorizedController.js"></script>
+    <script type="text/javascript" src="/js/controllers/modifyUserDialogController.js"></script>
+    <script type="text/javascript" src="/js/controllers/updateUserController.js"></script>
+    <script type="text/javascript" src="/js/controllers/fileUpController.js"></script>
+    <script type="text/javascript" src="/js/services/passDataService.js"></script>
+    <script type="text/javascript" src="/js/controllers/manageNewsController.js"></script>
+    <script type="text/javascript" src="/js/services/newsService.js"></script>
+    <script src="/js/services/galleryService.js"></script>
+    <script src="/js/controllers/galleryController.js"></script>
+    <script src="/js/controllers/newsController.js"></script>
+    <script src="/js/controllers/updateNewsController.js"></script>
+    <script src="/js/services/indexService.js"></script>
+    <script src="/js/services/galleryAction.js"></script>
+    <script src="/js/controllers/chatController.js"></script>
+    <script src="/js/controllers/manageVideosController.js"></script>
+    <script src="/js/services/videosService.js"></script>
+    <script src="/js/controllers/showVideoController.js"></script>
+    <script src="/js/controllers/changePasswordController.js"></script>
+    <script src="/js/controllers/addBlogNewsController.js"></script>
+    <script src="/js/controllers/adminBlogsController.js"></script>
+    <script src="/js/controllers/blogController.js"></script>
+    <script src="/js/controllers/updateBlogNewsController.js"></script>
+    <script src="/js/controllers/updateBlogSettingsController.js"></script>
+    <script src="/js/controllers/createBlogController.js"></script>
+    <script src="/js/services/blogService.js"></script>
+    <script src="/js/controllers/chooseBlogController.js"></script>
+    <script src="/js/controllers/updateMyBlogSettingsController.js"></script>
+    <script src="/js/controllers/adminBlogNewsController.js"></script>
+    <script src="/js/controllers/tokensManagerController.js"></script>
+    <script src="/js/controllers/showImgAtHomeController.js"></script>
+    <script src="/js/controllers/newsDialogController.js"></script>
+    <script src="/js/controllers/allNewsController.js"></script>
+    <script src="/js/controllers/showVideosController.js"></script>
+    <script src="/js/controllers/showGalleryController.js"></script>
+    <script src="/js/controllers/infPlusController.js"></script>
+    <script src="/js/controllers/showAtGallery.js"></script>
+
+    <script type="text/javascript" src="/js/services/authService.js"></script>
+    <script type="text/javascript" src="/js/controllers/associateController.js"></script>
+    <script type="text/javascript" src="/js/directives/ngFiles.js"></script>
+    <!--<script src="../directives/showTemplateVideo.js"></script>-->
+    <!--
+    <script type="text/javascript" src="../../directives/login.js"></script>
+    <script type="text/javascript" src="../../directives/signin.js"></script>
+        -->
+    <script type="text/javascript">
+        /*$(document).ready(function () {
+            var myCenter = new google.maps.LatLng(25.771426084793248, -80.29700204051016);
+            var x = document.getElementById("googleMap");
+
+            function initialize() {
+                var mapProp = {
+                    center: myCenter,
+                    zoom: 12,
+                    scrollwheel: false,
+                    draggable: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var marker = new google.maps.Marker({
+                    position: myCenter
+                });
+
+                marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        });*/
+    </script>
+
+    
+</body>
+</html>

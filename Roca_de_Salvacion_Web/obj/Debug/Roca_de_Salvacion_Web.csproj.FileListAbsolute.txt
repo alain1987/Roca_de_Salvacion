@@ -1,0 +1,59 @@
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\csc.exe
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\vbc.exe
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.dll.config
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.pdb
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\obj\Debug\Roca_de_Salvacion_Web.dll
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\obj\Debug\Roca_de_Salvacion_Web.pdb
+C:\Users\Frank-PC\Desktop\Alain\Visual Studio WorkSpace\Roca_de_Salvacion\Roca_de_Salvacion_Web\obj\Debug\Roca_de_Salvacion_Web.csprojResolveAssemblyReference.cache
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\csc.exe
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\vbc.exe
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.dll.config
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.pdb
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\obj\Debug\Roca_de_Salvacion_Web.dll
+D:\Workspace\Roca_de_Salvacion\Roca_de_Salvacion_Web\obj\Debug\Roca_de_Salvacion_Web.pdb
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\csc.exe
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\vbc.exe
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.dll.config
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\Roca_de_Salvacion_Web.pdb
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\obj\Debug\Roca_de_Salvacion_Web.csprojResolveAssemblyReference.cache
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\obj\Debug\Roca_de_Salvacion_Web.dll
+D:\Workspace\Roca_de_Salvacion_Test\Roca_de_Salvacion_Web\obj\Debug\Roca_de_Salvacion_Web.pdb

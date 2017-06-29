@@ -1,0 +1,21 @@
+﻿<div class="container-fluid myBg2 sectionHeight">
+    <div class="container">
+        <div>
+            <h3 class="jumbotron">Galer&iacute;a</h3>
+        </div>
+        <hr />
+        <div>
+            <md-button class="md-raised md-primary" ng-click="upload()"><span class="glyphicon glyphicon-plus"></span> | Subir imagen al sitio</md-button>
+            <md-button ng-click="begin()" class="md-raised md-primary"><span class="glyphicon glyphicon-home"></span> | Mostrar al inicio</md-button>
+            <md-button ng-click="users()" class="md-raised md-primary"><span class="glyphicon glyphicon-eye-open"></span> | Mostrar a usuarios</md-button>
+            <md-button ng-click="home()" class="md-raised md-primary"><span class="glyphicon glyphicon-arrow-left"></span> | Volver al inicio</md-button>
+        </div>
+            <div ng-repeat="image in images" class="inline">
+                <div>
+                    <a ng-click="select($index,$event, (base+image.fileName), image.name)">
+                        <img class="galleryImages img-responsive" ng-src="{{base+image.fileName}}" title="{{image.name}}" />
+                    </a>
+                </div>
+            </div>
+    </div>
+</div>

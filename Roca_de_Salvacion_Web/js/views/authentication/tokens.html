@@ -1,0 +1,47 @@
+﻿<div class="container">
+    <div class="row personalContainer">
+        <div class="col-md-2">
+            &nbsp;
+        </div>
+        <div class="col-md-8">
+            <h3 class="jumbotron">Lista de usuarios con tokens renovadas ({{refreshTokens.length}})</h3>
+            <div>
+                    <md-button class="md-raised md-primary" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver</md-button>
+                
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Acci&oacute;n</th>
+                            <th>Usuario</th>
+                            <th>Emitido (UTC)</th>
+                            <th>Expira (UTC)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-ng-repeat="token in refreshTokens">
+                            <td>
+                                <md-button class="md-raised md-primary" data-ng-click="deleteRefreshTokens($index,token.id)" href="">Eliminar</md-button>
+                            </td>
+                            <td>
+                                {{ token.subject }}
+                            </td>
+                            <td>
+                                {{ token.issuedUtc | date:'medium' }}
+                            </td>
+                            <td>
+                                {{ token.expiresUtc | date:'medium' }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+        </div>
+
+        <div class="col-md-2">
+            &nbsp;
+        </div>
+    </div>
+    
+    </div>

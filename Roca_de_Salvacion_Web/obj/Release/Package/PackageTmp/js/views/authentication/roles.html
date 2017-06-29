@@ -1,0 +1,47 @@
+﻿<div class="container personalContainer">
+    <h2 class="jumbotron">Usuarios</h2>
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-4 colmd-4 col-lg-4">
+                <md-button class="md-raised md-primary" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio</md-button>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <div class="table-responsive">
+                    <table class="table table-hover" style="position:center;">
+                        <thead style="background-color:rgb(63,81,181);color:white;">
+                            <tr>
+                                <th></th>
+                                <th>Usuario</th>
+                                <th>Rol</th>
+                                <th> Acciones</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="role in roles">
+                                <td></td>
+                                <td>{{role.username}}</td>
+                                <td>{{role.role}}</td>
+                                <td>
+                                    <md-button class="md-primary md-raised myResponsiveText" ng-click="openEditUser($event, $index)">
+                                        Editar <span class="glyphicon glyphicon-pencil"></span>
+                                    </md-button>
+                                </td>
+                                <td>
+                                    <md-button class="md-primary md-raised myResponsiveText" ng-click="showDelete($event,role.userId,$index)">
+                                        Eliminar <span class="glyphicon glyphicon-minus"></span>
+                                    </md-button>
+                                </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+    </div>
+</div>

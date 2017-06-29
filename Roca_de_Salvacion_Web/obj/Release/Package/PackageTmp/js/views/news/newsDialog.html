@@ -1,0 +1,35 @@
+﻿<md-dialog aria-label="">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Noticia ampliada</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon md-svg-src="../../../Content/images/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <h2>{{myNews.title}}</h2>
+                <p>
+                    {{myNews.description}}
+                </p>
+
+                <img style="margin: auto; max-width: 80%;"  ng-src="{{myNews.urlImagen}}">
+
+                <p>
+                    {{myNews.texto}}
+                </p>
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <span flex></span>
+            <md-button class="md-raised md-primary" ng-click="cancel()">
+                Aceptar
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

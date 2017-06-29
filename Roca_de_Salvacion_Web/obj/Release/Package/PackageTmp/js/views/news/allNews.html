@@ -1,0 +1,20 @@
+﻿<div class="container-fluid myBg2">
+    <div class="container">
+            <h3 class="jumbotron">Noticias</h3>
+            <md-button ng-click="home()" class="md-raised md-primary"><span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio</md-button>
+        </div>
+        <div class="container">
+            <div ng-repeat="n in news" class="panel panel-default text-center" style="width:270px;">
+                <div class="panel-heading" style="border-bottom-width:0px">
+                    <h3>{{n.title}}</h3>
+                </div>
+                <div class="panel-body" style="padding:0px !important;">
+                    <img ng-src="{{n.urlImagen}}" style="max-width:100%;width:100%;height:140px;" />
+                </div>
+                <div class="panel-footer">
+                    <p class="myTextColor4">{{n.description}}</p>
+                    <button ng-click="openNews($event,$index)" style="cursor:pointer;" class="btn btn-lg">Ver Noticia</button>
+                </div>
+            </div>
+    </div>
+</div>

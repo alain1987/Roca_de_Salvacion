@@ -1,0 +1,38 @@
+﻿<div class="container personalContainer">
+    <h3 class="jumbotron">Crear noticias para mi Blog</h3>
+    <md-content layout-padding="">
+        <form name="projectForm">
+            <md-input-container class="md-block">
+                <md-button class="md-raised md-primary" ng-click="selectImage()">Seleccionar Imagen</md-button>
+                <br />
+                <div ng-show="showPic">
+                    <img ng-src="{{url}}"
+                         style="border-radius:5px;box-shadow:1px 2px 4px rgba(0, 0, 0,0.5); width:20%;height:auto;" />
+                </div>
+
+            </md-input-container>
+            <br />
+            <md-input-container class="md-block">
+                <label>Titulo de publicaci&oacute;n</label>
+                <input type="text" md-minlength="4" required="" md-no-asterisk="" name="title" ng-model="blogNews.title" />
+                <div ng-messages="projectForm.title.$error">
+                    <div ng-message="required">Requerido.</div>
+                    <div ng-message="md-minlength">El t&iacute;tulo debe tener mas de 4 o m&aacute;s caracteres.</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Contenido de la noticia</label>
+                <textarea md-minlength="20" required="" md-no-asterisk="" name="text" ng-model="blogNews.text"></textarea>
+                <div ng-messages="projectForm.text.$error">
+                    <div ng-message="required">Requerido.</div>
+                    <div ng-message="md-minlength">El contenido debe tener mas de 20 caracteres.</div>
+                </div>
+            </md-input-container>
+
+            <div>
+                <md-button type="submit" md-no-ink="" style="width:200px;" class="md-raised md-primary" ng-click="addNewsBlog(blogNews)">Publicar Noticia</md-button>
+                <md-button type="submit" md-no-ink="" style="width:200px;" class="md-raised md-primary" ng-click="back()"><span class="glyphicon glyphicon-arrow-left"></span> Cancelar</md-button>
+            </div>
+        </form>
+    </md-content>
+</div>

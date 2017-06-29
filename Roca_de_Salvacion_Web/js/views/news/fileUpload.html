@@ -1,0 +1,32 @@
+﻿
+<div class="container-fluid myBg2 sectionHeight">
+    <div class="container">
+        <h3 class="jumbotron">Imagenes para subir al sitio</h3>
+        <md-button class="md-raised md-primary" ng-click="home()">
+            <span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio
+        </md-button>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td><b>T&iacute;tulo</b></td>
+                        <td><b>Im&aacute;gen</b></td>
+                        <td><b>Capacidad</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="image in imagesrc track by $index">
+                        <td>{{image.Name}}</td>
+                        <td><img ng-src="{{image.Src}}" style="width:100px;" title="{{image.Name}}" /></td>
+                        <td>{{image.Size}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <input type="file" multiple ng-files="getTheFiles($files)" value="Seleccionar" />
+            <md-button ng-disabled="!imagesrc.length" type="submit" md-no-ink="" style="width:200px;" class="md-raised md-primary" ng-click="uploadFiles()">Subir Imagen</md-button>
+            <md-button ng-disabled="!imagesrc.length" type="submit" md-no-ink="" style="width:200px;" class="md-raised md-primary" ng-click="reset()">Limpiar</md-button>
+        </div>
+    </div>
+</div>

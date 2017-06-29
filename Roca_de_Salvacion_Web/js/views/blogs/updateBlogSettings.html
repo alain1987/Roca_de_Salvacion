@@ -1,0 +1,48 @@
+﻿<div class="container-fluid myBg3">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <h3 class="jumbotron">Modificar Blog de {{blog.userName}}</h3>
+                <md-content layout-padding="">
+                    <form name="projectForm">
+                        <md-input-container class="md-block">
+                            <md-button class="md-raised md-primary" ng-click="selectImage()"><span class="glyphicon glyphicon-picture"></span> Cambiar Imagen</md-button>
+                            <br />
+                            <br />
+                            <div>
+                                <img ng-src="{{blog.mainUrlPicture}}"
+                                     style="border-radius:5px;box-shadow:1px 2px 4px rgba(0, 0, 0,0.5); width:20%;height:auto;" />
+                            </div>
+
+                        </md-input-container>
+                        <br />
+                        <md-input-container class="md-block">
+                            <label>Nombre del miembro del blog</label>
+                            <input type="text" md-minlength="4" required="" md-no-asterisk="" name="nombre" ng-model="blog.name" />
+                            <div ng-messages="projectForm.nombre.$error">
+                                <div ng-message="required">Requerido.</div>
+                                <div ng-message="md-minlength">El nombre debe tener mas de 4 o m&Aacute;s caracteres.</div>
+                            </div>
+                        </md-input-container>
+                        <br />
+                        <md-input-container class="md-block">
+                            <label>Rese&ntilde;a del miembro</label>
+                            <textarea md-minlength="50" required="" md-no-asterisk="" name="resena" ng-model="blog.resenaBlog"></textarea>
+                            <div ng-messages="projectForm.resena.$error">
+                                <div ng-message="required">Requerido.</div>
+                                <div ng-message="md-minlength">La rese&ntilde;a debe tener mas de 50 caracteres.</div>
+                            </div>
+                        </md-input-container>
+
+                        <div>
+                            <md-button type="submit" md-no-ink="" class="md-raised md-primary" ng-click="updateBlog(blog)"><span class="glyphicon glyphicon-pencil"></span> Modificar Blog</md-button>
+                            <md-button type="submit" md-no-ink="" class="md-raised md-primary" ng-click="back()"><span class="glyphicon glyphicon-arrow-left"></span> Cancelar</md-button>
+                        </div>
+                    </form>
+                </md-content>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+    </div>
+</div>

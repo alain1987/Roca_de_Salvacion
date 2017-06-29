@@ -1,0 +1,18 @@
+﻿<div class="container-fluid myBg2 sectionHeight">
+    <div class="container">
+        <div>
+            <h3 class="jumbotron">Galer&iacute;a</h3>
+        </div>
+        <hr />
+        <div>
+            <md-button ng-click="home()" class="md-raised md-primary"><span class="glyphicon glyphicon-arrow-left"></span> | Volver al inicio</md-button>
+            <md-button  ng-disabled="show" ng-click="showImg()" class="md-raised md-primary"><span class="glyphicon glyphicon-eye-open"></span> | Mostrar</md-button>
+        </div>
+        <div ng-repeat="image in images" class="inline">
+                <input id="{{image.id}}" type="checkbox" ng-checked="{{image.isShow}}" ng-click="check($index)"/>
+            <a data-fancybox="gallery" ng-href="{{base+image.fileName}}">
+                <img class="galleryImages img-responsive" ng-src="{{base+image.fileName}}" title="{{image.name}}" />
+                </a>
+</div>
+    </div>
+</div>

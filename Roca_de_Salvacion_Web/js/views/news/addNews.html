@@ -1,0 +1,40 @@
+﻿<div class="container-fluid myBg2">
+    <div class="container">
+        <h3 class="jumbotron">Publicar Noticia</h3>
+        <md-content layout-padding="">
+            <form name="projectForm">
+                <md-input-container>
+                    <img ng-src="{{img_src}}" style="border-radius:5px;box-shadow:1px 2px 4px rgba(0, 0, 0,0.5); width:80px;height:100px;" />
+                </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>T&iacute;tulo de la noticia:</label>
+                        <input type="text" md-minlength="4" required="" md-no-asterisk="" name="title" ng-model="news.Title" />
+                        <div ng-messages="projectForm.title.$error">
+                            <div ng-message="required">Requerido.</div>
+                            <div ng-message="md-minlength">El t&iacute;tulo debe tener mas de 4 o m&aacute;s caracteres.</div>
+                        </div>
+                    </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Descripci&oacute;n de la noticia:</label>
+                    <input type="text" md-minlength="10" required="" md-no-asterisk="" name="description" ng-model="news.Description" />
+                    <div ng-messages="projectForm.description.$error">
+                        <div ng-message="required">Requerido.</div>
+                        <div ng-message="md-minlength">La descripci&oacute;n debe tener 10 o m&aacute;s caracteres.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Cuerpo de la noticia:</label>
+                    <input type="text" md-minlength="10" required="" md-no-asterisk="" name="body" ng-model="news.Texto" />
+                    <div ng-messages="projectForm.body.$error">
+                        <div ng-message="required">Requerido.</div>
+                        <div ng-message="md-minlength">El cuerpo debe tener 10 o m&aacute;s caracteres.</div>
+                    </div>
+                </md-input-container>
+                <div>
+                    <md-button type="submit" md-no-ink="" style="width:200px;" class="md-raised md-primary" ng-click="publish(news)"><span class="glyphicon glyphicon-plus"></span> Publicar Noticia</md-button>
+                    <md-button type="submit" md-no-ink="" style="width:200px;" class="md-raised md-primary" ng-click="back()"><span class="glyphicon glyphicon-arrow-left"></span> Cancelar</md-button>
+                </div>
+</form>
+</md-content>
+    </div>
+</div>

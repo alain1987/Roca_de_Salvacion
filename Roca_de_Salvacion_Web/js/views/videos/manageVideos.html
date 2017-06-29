@@ -1,0 +1,48 @@
+﻿<div class="container-fluid myBg2 sectionHeight">
+    <div class="container">
+        <h3 class="jumbotron">Administrar los videos</h3>
+        <hr />
+        <md-button class="md-primary md-raised" ng-click="addVideo($event)"><span class="glyphicon glyphicon-plus"></span> A&ntilde;adir video</md-button>
+        <md-button class="md-raised md-primary" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio</md-button>
+        <hr />
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Mostrar en Inicio</th>
+                        <th>T&iacute;tulo</th>
+                        <th>Ver</th>
+                        <th>Acciones</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="video in videos">
+                        <td><input type="radio" name="mostrarInicio" ng-click="updateShowVideo($event,video)" ng-checked="{{video.isShow}}" /></td>
+                        <td><a class="myTextColor4" ng-click="showVideo($index)">{{video.name}}</a></td>
+                        <td><a class="videoList" ng-click="showVideo($index)"><img ng-src="{{video.img}}" /></a></td>
+                        <td><md-button class="md-raised md-primary" ng-click="deleteVideo($event,video.id)"><span class="glyphicon glyphicon-minus"></span> Eliminar</md-button></td>
+                        <td><md-button class="md-raised md-primary" ng-click="updateVideo($event,video)"><span class="glyphicon glyphicon-pencil"></span> Modificar</md-button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+    });
+</script>
+<script type="text/ng-template" id="myVideoContent.html">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()">&times;</button>
+        <h3 class="modal-title">{{myVideo.name}}</h3>
+    </div>
+    <form name="modalForm">
+        <div class="modal-body" style="text-align:left">
+            <div ng-bind-html="myVideo.urlVideo" class="myVideoPlaying">
+            </div>
+        </div>
+    </form>
+    </script>

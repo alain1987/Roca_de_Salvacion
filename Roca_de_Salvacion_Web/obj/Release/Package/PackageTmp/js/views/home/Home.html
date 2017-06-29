@@ -1,0 +1,380 @@
+﻿<video class="videoBg" height="639" preload="auto" autoplay muted loop>
+    <source src="../../../Content/video/VideoPortada.webm"/>
+</video>
+<div class="container-fluid sectionHeight videoContainerBackground">
+    <div>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container" style="margin-left: 10px;">
+                <div class="navbar-header myBg2" style="height:36px;">
+                    <button type="button" style=" margin-top: 0px; margin-bottom: 0px;" class="navbar-toggle" data-toggle="collapse" data-target="#rcsNavbar" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand myFontStyle1 myBg4" style="height:36px;"><h4 style="font-weight:bolder;margin:0px 0px 0px" class="myTextColor1 img-rounded">RDS</h4></a>
+                </div>
+                <div class="collapse navbar-collapse" data-collapse="!navbarExpanded" id="rcsNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="defaultMenu"><a href="#acerca_de">Quienes somos</a></li>
+                        <li class="defaultMenu"><a href="#buy">Canciones</a></li>
+                        <li class="defaultMenu"><a href="#news"><b>Noticias</b></a></li>
+                        <li class="defaultMenu"><a href="#pictures"><b>Im&aacute;genes</b></a></li>
+                        <li class="defaultMenu"><a href="#videos"><b>Videos</b></a></li>
+                        <li class="defaultMenu"><a href="#contact"><b>Quienes somos</b></a></li>
+
+                        <li ng-show="authentication.isAuth" ng-repeat="m in menu">
+                            <a class="defaultMenu myCursor" ng-click="changePage($index)"><b>{{m.operationName}}</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="text-center">
+        <div class="logsign">
+            <a class="btn myTextColor4" href="#/login" ng-hide="authentication.isAuth">Entrar</a>
+            <a class="btn myTextColor4" href="#/signup" ng-hide="authentication.isAuth">Registrarse</a>
+            <a class="btn myCursor" ng-show="authentication.isAuth" ng-click="logout()"><b>Salir</b></a>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div>
+            <!--<img src="../../../Content/images/IMG-20170425-WA0039.jpg" class="img-responsive img-rounded portada" />-->
+            <h1 class="myTextColor4 myFontStyle1" style="font-size:60px;"><b>Roca de Salvaci&oacute;n</b></h1>
+            <p class="myFontStyle2 myTextColor4" style="font-size:30px;"><b>Ministerio de alabanza y adoraci&oacute;n</b></p>
+            <br />
+            <br />
+            <!-- <div class="form-inline">
+            <input type="email" class="form-control" size="50" placeholder="Email Adress" />
+            <button class="btn btn-default btn-success">Suscribe</button>-->
+
+            <div>
+                <a id="start" href="#acerca_de" class="md-button md-raised md-primary">Con&oacute;cenos ya!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Acerca de-->
+<div class="container-fluid myBg3" id="acerca_de">
+    <div class="container sectionHeight">
+        <div class="row">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <h2 class="myFontStyle1">Nosotros</h2>
+                <p class="myFontStyle2" style="padding:30px 0px 30px 30px;">
+                    
+                        El ministerio Roca de Salvaci&oacute;n surgi&oacute; en 1995 luego de aceptar al se&ntilde;or
+                        Jes&uacute;s en la  vida de Frank Pe&ntilde;a, a lo que luego se sum&oacute; su esposa Rosa Emilia Pelaez,
+                        conocida por muchos cari&ntilde;osamente como Toty. Luego tuvieron dos hermosas hijas las cuales luego de una
+                        formaci&oacute;n musical decidieron acompan&ntilde;ar a sus padres en este camino en el cual se ministran las almas y
+                        se exalta al Se&ntilde;or.
+                    
+                </p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 slideHide" style="border-left:1px solid lightgrey;">
+                <img src="../../../Content/images/IMG-20170425-WA0039.jpg" class="img-responsive img-rounded portada" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container-fluid myBg1">
+     <div class="row">
+         <div class="col-xs-4 col-sm-4 col-md-4 slideHide">
+             <span class="glyphicon glyphicon-globe logo"></span>
+         </div>
+         <div class="col-xs-8 col-sm-8 col-md-8">
+
+             <h2><strong>Hey:</strong> Header 2</h2>
+             <h4><strong>You:</strong> Header 4</h4>
+             <p>Paragraph</p>
+         </div>
+     </div>
+ </div>-->
+<!--Musica-->
+<div class="container-fluid myBg2" id="buy">
+    <div class="container text-center sectionHeight">
+        <h3 class="myTextColor3 myFontStyle1">Nuestra M&uacute;sica</h3>
+        <br />
+        <h4 class="myTextColor3 myFontStyle2">A trav&eacute;s de las principales plataformas</h4>
+        <hr />
+        <br />
+        <div class="row slideHide">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <span class="glyphicon glyphicon-font small-logo myTextColor4"></span>
+                <h4 class="myTextColor4">Amazon</h4>
+                <a class="myTextColor4" target="_blank" href="https://www.amazon.com/Crey%C3%B3-Roca-Salvaci%C3%B3n/dp/B071WHQNVS/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1496952860&sr=1-1-mp3-albums-bar-strip-0&keywords=roca+de+Salvacion">amazon.com</a>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <span class="glyphicon glyphicon-music small-logo"></span>
+                <h4 class="myTextColor4">iTunes</h4>
+                <a class="myTextColor4" href="itunes.com">itunes.com</a>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <span class="glyphicon glyphicon-headphones small-logo"></span>
+                <h4 class="myTextColor4">GooglePlay</h4>
+                <a class="myTextColor4" target="_blank" href="https://play.google.com/store/music/album?id=Browanmlosjmyayw63k3vwswwmu&tid=song-Tgun4wbgf2ozjlh4v4kfuzyh6hu">googleplay.com</a>
+            </div>
+        </div>
+        <div class="row slideHide">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <p style="text-align:left; padding:20px;" class="myTextColor4 myFontStyle2">
+                    <span style="font-size:15px;" class="glyphicon glyphicon-heart small-logo"></span> S&iacute;guenos a trav&eacute;s de estas plataformas para que est&eacute;s al d&iacute;a con cada una de nuestras
+                    producciones, si nos contactas podemos darte promociones e incluso m&aacute;s! As&iacute; que no te lo pierdas y
+                    entra ya y empieza a o&iacute;r nuestras canciones, estamos seguros que ministrar&aacute;n mucho tu vida <span style="font-size:15px;" class="glyphicon glyphicon-heart small-logo"></span>
+                </p>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">&nbsp;</div>
+        </div>
+    </div>
+</div>
+<!--Pictures-->
+<div class="container-fluid myBg1" id="news">
+    <div class="container text-center sectionHeight">
+        <h1 class="myFontStyle1 myTextColor4">Noticias</h1>
+        <hr />
+        <div class="myNewsContainer inline slideHide" ng-repeat="n in news">
+            <div class="myNews">
+                <img ng-src="{{n.urlImagen}}" height="127" style="width:100%;" />
+                <p class="myTextColor4 myFontStyle2">{{n.description}}</p>
+                <md-button class="md-raised md-primary" ng-click="openNews($event,$index)">Leer Noticia completa</md-button>
+            </div>
+        </div>
+        <hr />
+        <div class="text-center slideHide">
+            <md-button class="md-raised md-primary" ng-click="allNews()"><span class="glyphicon glyphicon-list-alt"></span> | Ver mas noticias</md-button>
+        </div>
+    </div>
+</div>
+<!--<div class="row" style="padding:5px 30px 5px 30px !important;">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">&nbsp;</div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 myNews">
+        <img src="../../../Content/images/IMG-20170425-WA0047.jpg" height="127" style="width:100%;" />
+        <p class="myTextColor1">Ministrando en el culto de resurreci&oacute;n en nuestra iglesia Centro de Avivamiento Cristiano...</p>
+        <a href="#" class="myTextColor2">Ver Mas >></a>
+    </div>
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 myNews">
+        <img src="../../../Content/images/IMG-20170425-WA0023.jpg" height="127" style="width:100%;" />
+        <p class="myTextColor1">Culto de crucificci&oacuten en nuestra iglesia Centro de Avivamiento Cristiano</p>
+        <a href="#" class="myTextColor2">Ver Mas >></a>
+    </div>
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 myNews">
+        <img src="../../../Content/images/IMG-20170425-WA0014.jpg" height="127" style="width:100%;" />
+        <p>Ministraci&oacute;n a matrimonios en una visita a una iglesia hermana...</p>
+        <a href="#" class="myTextColor2">Ver Mas >></a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a><h3 class="myTextColor1">Ver m&aacute;s noticias...>></h3></a></div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+</div>-->
+<!--Videos-->
+<div class="container-fluid myBg4" id="pictures">
+    <div class="container text-center slideHide " style="height:640px;">
+        <div class="row">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <h1 class="myTextColor1 myGallery myFontStyle1">Galeria</h1>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                    <div uib-slide ng-repeat="slide in slides" index="$index">
+                        <img ng-src="{{base+slide.fileName}}" style="margin:auto; max-width:60%;height:400px; ">
+                        <div class="carousel-caption">
+                            <h4 class="myFontStyle2">Imagen {{$index+1}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+        <div class=" text-center">
+            <md-button class="md-raised md-primary" ng-click="allPictures()"><span class="glyphicon glyphicon-picture"></span> Ver mas im&aacute;genes</md-button>
+        </div>
+    </div>
+</div>
+
+<!--Videos-->
+<div class="container-fluid myBg2" id="videos">
+    <div class="container text-center sectionHeight">
+        <h1 class="myTextColor3 myFontStyle1">Videos</h1>
+        <p class="myTextColor3 myFontStyle2">Fueron filmados durante ministraciones en distintas iglesias, as&iacute; como en ensayos y grabaciones</p>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding:30px 0px 30px 30px;">
+                <h2 class="slideHide myTextColor4 myFontStyle1">{{myVideo.name}}</h2>
+                <p style="text-align:left;" class="slideHide myTextColor4 myFontStyle2">
+                        {{myVideo.videoDescription}}
+                </p>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 slideHide" style="border-left:1px solid lightgrey;">
+                <div>{{videoMessage}}</div>
+                <div ng-bind-html="myVideo.urlVideo" class="myVideoContainer"></div>
+                <!--<iframe style="width:80%;height:350px;" src="https://www.youtube.com/embed/XFLD0tXvt_I" frameborder="0" allowfullscreen></iframe>-->
+            </div>
+        </div>
+        <br />
+        <div class="text-center ">
+        <md-button class="md-raised md-primary slideHide" ng-click="showAllVideos()">
+            <h4><span class="glyphicon glyphicon-eye-open"></span> | Ver mas videos</h4>
+        </md-button>
+        </div>
+    </div>
+</div>
+
+<a href="#rcs" title="Volver hacia arriba" class="img-rounded myFloatingButton">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+</a>
+<!--Contact-->
+<div class="container-fluid myBg3" id="contact">
+    <div class="container sectionHeight">
+        <h1 class="text-center myResponsiveText myTextColor1 myFontStyle2">
+            Contact&aacute;ctanos para que oremos
+            <br />
+            por ti o ministremos en tu iglesia
+        </h1>
+        <div class="row slideHide">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="myFontStyle2"><b>Contactanos a trav&eacute;s de:</b></p>
+                <p class="myTextColor1 myFontStyle2"><span class="glyphicon glyphicon-map-marker"></span> Miami, US</p>
+                <p class="myTextColor1 myFontStyle2"><span class="glyphicon glyphicon-envelope"></span> rocadesalvacion95@gmail.com</p>
+            </div>
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            </div>
+        </div>
+        <div class="row slideHide">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <div id="googleMap" style="width:100% ;height:400px;"></div>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<br />
+<br />-->
+<footer class="container text-center" style="background-color:black;width:100%;height:60px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-lg-12">
+                <p class="text-muted text">
+                    Created by Alain Garcia. LinkedIn:
+                    <a target="_blank" href="https://www.linkedin.com/in/alain-garcia-524714127?trk=nav_responsive_tab_profile_pic">Alain Garcia</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var myCenter = new google.maps.LatLng(25.771426084793248, -80.29700204051016);
+        var x = document.getElementById("googleMap");
+
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                zoom: 12,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+
+            marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+        //ANIMACION Y SCROLL
+        $("li[class='defaultMenu'] a, #start, a[href='#rcs']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1500, function () {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                });
+            }
+        });
+
+        //Animacion cuando hace scroll la pagina
+        $(window).scroll(function () {
+            $(".slideHide").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("animateOnSlide");
+                }
+            });
+        });
+    });
+</script>
+
+<script type="text/ng-template" id="myNews.html">
+    <md-dialog aria-label="">
+        <form ng-cloak>
+            <md-toolbar>
+                <div class="md-toolbar-tools">
+                    <h2>{{n.title}}</h2>
+                    <span flex></span>
+                    <md-button class="md-icon-button" ng-click="cancel()">
+                        <md-icon md-svg-src="../../..Content/images/icons/ic_close_24px.svg" aria-label="Cerrar"></md-icon>
+                    </md-button>
+                </div>
+            </md-toolbar>
+
+            <md-dialog-content>
+                <div class="md-dialog-content">
+                    <h2>{{n.title}}</h2>
+                    <p>
+                        {{n.description}}
+                    </p>
+
+                    <img style="margin: auto; max-width: 100%;" alt="Lush mango tree" ng-src="{{n.urlImagen}}">
+                    <p>
+                        {{n.texto}}
+                    </p>
+                </div>
+            </md-dialog-content>
+
+            <md-dialog-actions layout="row">
+                <md-button href="#" md-autofocus>
+                    Mas Noticias
+                </md-button>
+                <span flex></span>
+                <md-button ng-click="cancel()">
+                    Cerrar
+                </md-button>
+            </md-dialog-actions>
+        </form>
+    </md-dialog>
+</script>

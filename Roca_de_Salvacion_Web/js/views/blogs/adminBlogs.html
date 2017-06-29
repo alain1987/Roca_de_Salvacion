@@ -1,0 +1,37 @@
+﻿<div class="container personalContainer">
+    <div>
+        <h3 class="jumbotron">Administrar Blogs</h3>
+    </div>
+    <br />
+    <div>
+        <md-button class="md-raised md-primary" href="#/createBlog">Crear nuevo Blog <span class="glyphicon glyphicon-plus"></span></md-button>
+        <md-button class="md-raised md-primary" ng-click="home()">
+            <span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio
+        </md-button>
+    </div>
+    <div class="row">
+        <div class="col-sm-1 col-xs-1 colmd-1 col-lg-1"></div>
+        <div class="col-sm-10 col-xs-10 colmd-10 col-lg-10">
+            <div class=" table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Accion</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="blog in blogs">
+                            <td>{{blog.name}}</td>
+                            <td><md-button class="md-raised md-primary" ng-click="openDeleteBlog($event, blog.id)">Eliminar <span class="glyphicon glyphicon-minus"></span></md-button></td>
+                            <td><md-button class="md-raised md-primary" ng-click="openUpdateBlog(blog)">Modificar <span class="glyphicon glyphicon-pencil"></span></md-button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-1 col-xs-1 colmd-1 col-lg-1"></div>
+        
+    </div>
+</div>

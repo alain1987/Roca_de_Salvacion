@@ -1,0 +1,26 @@
+﻿<div class="container-fluid myBg2" style="padding:0 !important">
+    <div class="container myBg1" style="border:2px solid lightgrey;border-radius:10px;box-shadow:0px 2px 10px 0px;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img class="img-rounded" ng-src="{{blogSettings.mainUrlPicture}}" height="200" style=" width:100%;box-shadow:0px 2px 10px 0px;margin:5px 5px 5px 0px;" />
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3 class="jumbotron">{{blogSettings.name}}</h3>
+            </div>
+        </div>
+        <md-button class="md-raised md-primary" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Inicio</md-button>
+        <hr />
+        <div class="row myBg3" ng-repeat="news in blogNews" style="padding:5px;margin:5px; border:1px solid lightgrey;border-radius:10px;">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="margin-left:0px;">
+                <img ng-src="{{news.mainUrlPicture}}" class="img-rounded" style="max-width:95%;width:95%;" />
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <h3 class="jumbotron">{{news.title}}</h3>
+                <p class="myTextColor1">{{news.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>

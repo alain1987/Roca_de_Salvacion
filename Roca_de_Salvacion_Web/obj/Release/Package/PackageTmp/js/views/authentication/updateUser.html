@@ -1,0 +1,170 @@
+﻿<div class="container personalContainer">
+    <h3 class="jumbotron"> Editar usuario: {{user.userName}}</h3>
+    <md-content class="md-padding">
+        <md-tabs class="md-tabs" md-selected="data.selectedIndex" md-align-tabs="{{'top'}}" md-dynamic-height="" md-border-bottom="">
+            <md-tab id="userData" ng-click="getTabName('userData')">
+                <md-tab-label class="changeTabColor">Datos del usuario</md-tab-label>
+                <md-tab-body>
+                    <md-content layout-padding="">
+                        <form name="userFormData">
+                            <div layout-gt-sm="row">
+
+                                <md-input-container class="md-block" flex-gt-sm="">
+                                    <label>Nombre de Usuario</label>
+                                    <md-icon md-svg-src="../../Content/images/icons/ic_person_24px.svg" class="name"></md-icon>
+                                    <input md-maxlength="30" required="" name="name" ng-model="user.userName" ng-disabled="editUserNameInput">
+                                    <md-icon md-svg-src="../../Content/images/icons/ic_border_color_black_24px.svg" class="name" style="cursor:pointer;" title="Editar nombre de usuario"
+                                             ng-click="editUserName()"></md-icon>
+                                    <div class="hint" ng-if="showHints">Escribe un nombre de usuario</div>
+
+                                    <div ng-messages="userFormData.name.$error" ng-if="!showHints">
+                                        <div ng-message="required">El nombre es obligatorio.</div>
+                                        <div ng-message="md-maxlength">El nombre de usuario es &uacute;nico y debe tener menos de 30 caracteres.</div>
+                                    </div>
+                                </md-input-container>
+
+                                <div flex="5" hide-xs="" hide-sm="">
+                                    <!-- Spacer //-->
+                                </div>
+
+                            </div>
+
+                            <div layout-gt-sm="row">
+
+                                <md-input-container class="md-block" flex-gt-sm="">
+                                    <label>Correo(Email)</label>
+                                    <md-icon md-svg-src="../../Content/images/icons/ic_email_24px.svg" class="email"></md-icon>
+                                    <input  name="email" ng-model="user.email" required="" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/">
+
+                                    <div class="hint" ng-show="showHints">Correo para contactar el usuario</div>
+
+                                    <div ng-messages="userFormData.email.$error" ng-hide="showHints">
+                                        <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                            El correo debe estar entre 10 y 100 caracteres.
+                                        </div>
+                                    </div>
+                                </md-input-container>
+
+                                <div flex="5" hide-xs="" hide-sm="">
+                                    <!-- Spacer //-->
+                                </div>
+
+                                <md-input-container class="md-block" flex-gt-sm="">
+                                    <label>Tel&eacute;fono</label>
+                                    <md-icon md-svg-src="../../Content/images/icons/ic_phone_24px.svg"></md-icon>
+                                    <input type="tel" name="phone" ng-model="user.phoneNumber" ng-pattern="/^[0-9]{10}$/">
+
+                                    <div class="hint" ng-show="showHints">(###) ###-####</div>
+
+                                    <div ng-messages="userFormData.phone.$error" ng-click="alert(userFormData.phone.$error)" ng-hide="showHints">
+                                        <div ng-message="pattern">(###) ###-#### - Por favor introducir n&uacute;mero de tel&eacute;fono v&aacute;lido.</div>
+                                    </div>
+                                </md-input-container>
+
+                                <style>
+                                                             /*
+                                    * The Material demos system does not currently allow targeting the body element, so this
+                                    * must go here in the HTML.
+                                    */
+                                    body[dir=rtl] .hint {
+                                        right: 2px;
+                                        left: auto;
+                                    }
+                                </style>
+                            </div>
+                           
+                            <div style="text-align:right">
+                                <md-button class="md-raised md-primary" ng-click="cancelModify()"><span class="glyphicon glyphicon-arrow-left"></span> Cancelar</md-button>
+                                <md-button class="md-primary md-raised" ng-click="updateDataUser($event,user)" ng-disabled="userFormData.$invalid">
+                                    <span class="glyphicon glyphicon-pencil"></span> Modificar
+                                </md-button>
+                            </div>
+                        </form>
+                    </md-content>  
+                </md-tab-body>
+            </md-tab>
+            <md-tab id="userPassword" ng-click="getTabName('userPassword')" >
+
+                <md-tab-label>Contrase&ntilde;a</md-tab-label>
+                <md-tab-body>
+                    <md-content layout-padding="">
+                        <form name="userFormPassword">
+                            <div layout-gt-sm="row">
+
+                                <md-input-container class="md-block" flex-gt-sm="">
+                                    <label>Contrase&ntilde;a</label>
+                                    <md-icon md-svg-src="../../Content/images/icons/ic_lock_outline_black_24px.svg" class="name"></md-icon>
+                                    <input type="password" minlength="6" required="" name="password" ng-model="userPassword.password">
+
+                                    <div class="hint" ng-if="showHints">Escribe una contrase&ntilde;a</div>
+
+                                    <div ng-messages="userFormPassword.name.$error" ng-if="!showHints">
+                                        <div ng-message="required">La Contrase&ntilde;a es obligatoria, no puede estar vacia.</div>
+                                        <div ng-message-exp="['required', 'minlength', 'pattern']">La contrase&ntilde;a debe tener al menos 6 caracteres.</div>
+                                    </div>
+                                </md-input-container>
+                            </div>
+                                <div flex="5" hide-xs="" hide-sm=""></div>
+                            <div layout-gt-sm="row">
+                        <md-input-container class="md-block" flex-gt-sm="">
+                            <label>Confirmar Contrase&ntilde;a</label>
+                            <md-icon md-svg-src="../../Content/images/icons/ic_lock_outline_black_24px.svg" class="name"></md-icon>
+                            <input type="password" minlength="6" required="" name="confirmPassword" ng-model="userPassword.confirmPassword">
+                            <div class="hint" ng-if="showHints">Confirma la contrase&ntilde;a</div>
+                            <!--
+
+                            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                El correo debe estar entre 10 y 100 caracteres.
+                            </div>-->
+
+                            <div ng-messages="userFormPassword.confirmPassword.$error" ng-if="!showHints">
+                                <div ng-message="required">Es obligatorio confirmar las contrase&ntilde;as.</div>
+                                <div ng-message-exp="['required', 'minlength', 'pattern']">La confirmacion de la contrase&ntilde;a debe tener al menos 6 caracteres.</div>
+                            </div>
+                        </md-input-container>
+                                </div>
+                            <div style="text-align:right">
+                                <md-button class="md-raised md-primary" ng-click="cancelModify()">
+                                <span class="glyphicon glyphicon-arrow-left"></span> Cancelar</md-button>
+                                <md-button class="md-raised md-primary" ng-disabled="(userFormPassword.$invalid) || (userPassword.password != userPassword.confirmPassword)" 
+                                           ng-click="updateUserPassword($event,user.id,userPassword, user)">
+                                <span class="glyphicon glyphicon-pencil"></span> Modificar</md-button>
+                            </div>
+
+</form>
+                </md-tab-body>
+            </md-tab>
+            <md-tab id="userRole" ng-click="getTabName('userRole')">
+                <md-tab-label>Rol</md-tab-label>
+                <md-tab-body>
+                    <form name="userFormRol">
+                        <div layout-gt-sm="row">
+
+                            <md-input-container class="md-block" flex-gt-sm="">
+                                <div layout="column" layout-align="center center" style="padding:40px" ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+                                    <p>Selecciona uno de los siguientes roles si quieres cambiar los permisos del usuario: <b>{{user.userName}}</b></p>
+                                    <p>Su rol anterior era: <b>{{oldRole}}</b></p>
+                                    <div layout="column" layout-align="center center">
+                                        <md-select placeholder="Rol de Usuario" ng-model="myUserRol" md-on-open="loadRoles()" style="min-width: 200px;">
+                                            <md-option ng-value="myUserRol" ng-repeat="myUserRol in myUserRoles">{{myUserRol}}</md-option>
+                                        </md-select>
+                                        <p class="md-caption">Ha asignado el rol: {{myUserRol ? myUserRol: 'No ha seleccionado ninguno'}}</p>
+
+                                    </div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                        <div flex="5" hide-xs="" hide-sm=""></div>
+                        <div style="text-align:right">
+                            <md-button class="md-raised md-primary" ng-click="cancelModify()"><span class="glyphicon glyphicon-arrow-left"></span> Cancelar</md-button>
+                            <md-button class="md-raised md-primary" ng-disabled="userFormRol.$invalid" ng-click="setUserRole($event,user)"><span class="glyphicon glyphicon-pencil"></span> Modificar</md-button>
+                        </div>
+                        
+                    </form>
+                </md-tab-body>
+            </md-tab>
+            <button>Cancelar</button>
+            <button>Modificar</button>
+        </md-tabs>
+    </md-content>
+</div>

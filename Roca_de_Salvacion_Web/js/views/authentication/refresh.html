@@ -1,0 +1,35 @@
+﻿<div class="container personalContainer">
+    <h2 class="jumbotron">Renovar Acceso</h2>
+    <div class="row">
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+        <div class="col-md-6">
+            <p data-ng-hide="authentication.useRefreshTokens">
+                El usuario <strong>{{authentication.userName}}</strong>ha desabilitado la opcion
+                <strong>Renovar Acceso</strong> una vez que ya haya entrado con usuario y contrase&ntilde;a no puede usarla a menos que vuelva a iniciar sesi&oacute;n
+            </p>
+            <div data-ng-show="authentication.useRefreshTokens">
+                <p class="text-success">Esta pagina es para obtener mas tiempo de acceso a nuestro sitio de manera segura.</p>
+                <p>El Usuario <strong>{{authentication.userName}}</strong> ha activado <strong>Renovar Acceso</strong> una vez ya iniciada la sesi&oacute;n, presione el bot&oacute;n inferior para obtener m&aacute;s tiempo de acceso de manera segura.</p>
+                <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="refreshToken()" data-ng-disabled="!authentication.userName && !authentication.useRefreshTokens">Renovar Acceso</button>
+            </div>
+            <div data-ng-show="authentication.useRefreshTokens" style="margin-top:10px;">
+                <div class="panel panel-success" data-ng-show="tokenRefreshed">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Su acceso ha sido actualizado!</h3>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <md-button class="md-raised md-primary" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Inicio</md-button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+    </div>
+</div>
+

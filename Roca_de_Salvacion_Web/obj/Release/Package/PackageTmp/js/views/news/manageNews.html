@@ -1,0 +1,42 @@
+﻿<div class="container-fluid myBg2 sectionHeight">
+    <div class="container">
+        <h3 class="jumbotron">Noticias</h3>
+        <md-button ng-click="publish()" class="md-raised md-primary"><span class="glyphicon glyphicon-plus"></span> | Publicar Noticia</md-button>
+        <md-button ng-click="home()" class="md-raised md-primary"><span class="glyphicon glyphicon-arrow-left"></span> | Volver al inicio</md-button>
+        <md-button class="md-raised md-primary" ng-disabled="show" ng-click="updateNewsIsShow()"><span class="glyphicon glyphicon-eye-open"></span> | Mostrar al inicio</md-button>
+    </div>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-hover" style="position:center;width:80%;margin:0 auto;">
+                <thead>
+                    <tr>
+                        <th>Mostrar en Inicio</th>
+                        <th>Titulo</th>
+                        <th>Descripci&oacute;n</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="n in news">
+                        <td><input type="checkbox" id="{{n.id}}" ng-checked="{{n.isShow}}" ng-click="check($index)" /></td>
+                        <td>{{n.title}}</td>
+                        <td>{{n.description}}</td>
+                        <td><md-button class="md-raised md-primary" ng-click="updateNews(n)"><span class="glyphicon glyphicon-pencil"></span> | Editar</md-button></td>
+                        <td><md-button class="md-raised md-primary" ng-click="deleteNews(n)"><span class="glyphicon glyphicon-minus"></span> | Eliminar</md-button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--    <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <label>T&iacute;tulo: </label>
+                    <input type="text" placeholder="T&iacute;tulo de la noticia" style="width:80%;" />
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <label>Texto: </label>
+                    <textarea placeholder="Texto de la noticia" style="width:90%; height:100px;"></textarea>
+                </div>
+            </div>-->
+    </div>
+</div>

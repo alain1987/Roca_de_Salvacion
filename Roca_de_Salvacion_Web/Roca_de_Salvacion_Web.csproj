@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.2.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.2.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9134F02B-A306-4BDB-BFAA-B088C4C7947A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Roca_de_Salvacion_Web</RootNamespace>
+    <AssemblyName>Roca_de_Salvacion_Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\angular-material.css" />
+    <Content Include="Content\angular-material.layout-attributes.css" />
+    <Content Include="Content\angular-material.layout-attributes.min.css" />
+    <Content Include="Content\angular-material.layouts.css" />
+    <Content Include="Content\angular-material.layouts.ie_fixes.css" />
+    <Content Include="Content\angular-material.layouts.min.css" />
+    <Content Include="Content\angular-material.min.css" />
+    <Content Include="Content\css\angular-material.css" />
+    <Content Include="Content\css\angular-material.layout-attributes.css" />
+    <Content Include="Content\css\angular-material.layout-attributes.min.css" />
+    <Content Include="Content\css\angular-material.layouts.css" />
+    <Content Include="Content\css\angular-material.layouts.ie_fixes.css" />
+    <Content Include="Content\css\angular-material.layouts.min.css" />
+    <Content Include="Content\css\angular-material.min.css" />
+    <Content Include="Content\images\Fondo-lila-luz-línea - Horizontal.jpg" />
+    <Content Include="Content\images\Fondo-lila-luz-línea.jpg" />
+    <Content Include="Content\images\icons\addShoppingCart.svg" />
+    <Content Include="Content\images\icons\android.svg" />
+    <Content Include="Content\images\icons\angular-logo.svg" />
+    <Content Include="Content\images\icons\bower-logo.svg" />
+    <Content Include="Content\images\icons\cake.svg" />
+    <Content Include="Content\images\icons\codepen-logo.svg" />
+    <Content Include="Content\images\icons\copy.svg" />
+    <Content Include="Content\images\icons\copy2.svg" />
+    <Content Include="Content\images\icons\facebook.svg" />
+    <Content Include="Content\images\icons\favorite.svg" />
+    <Content Include="Content\images\icons\github-icon.svg" />
+    <Content Include="Content\images\icons\github.svg" />
+    <Content Include="Content\images\icons\hangout.svg" />
+    <Content Include="Content\images\icons\ic_access_time_24px.svg" />
+    <Content Include="Content\images\icons\ic_arrow_back_24px.svg" />
+    <Content Include="Content\images\icons\ic_arrow_up_24px.svg" />
+    <Content Include="Content\images\icons\ic_border_color_black_24px.svg" />
+    <Content Include="Content\images\icons\ic_build_24px.svg" />
+    <Content Include="Content\images\icons\ic_card_giftcard_24px.svg" />
+    <Content Include="Content\images\icons\ic_check_box_black_24px.svg" />
+    <Content Include="Content\images\icons\ic_chevron_right_24px.svg" />
+    <Content Include="Content\images\icons\ic_close_24px.svg" />
+    <Content Include="Content\images\icons\ic_code_24px.svg" />
+    <Content Include="Content\images\icons\ic_comment_24px.svg" />
+    <Content Include="Content\images\icons\ic_email_24px.svg" />
+    <Content Include="Content\images\icons\ic_euro_24px.svg" />
+    <Content Include="Content\images\icons\ic_insert_drive_file_24px.svg" />
+    <Content Include="Content\images\icons\ic_label_24px.svg" />
+    <Content Include="Content\images\icons\ic_launch_24px.svg" />
+    <Content Include="Content\images\icons\ic_lock_outline_black_24px.svg" />
+    <Content Include="Content\images\icons\ic_menu_24px.svg" />
+    <Content Include="Content\images\icons\ic_more_vert_24px.svg" />
+    <Content Include="Content\images\icons\ic_ondemand_video_24px.svg" />
+    <Content Include="Content\images\icons\ic_people_24px.svg" />
+    <Content Include="Content\images\icons\ic_person_24px.svg" />
+    <Content Include="Content\images\icons\ic_phone_24px.svg" />
+    <Content Include="Content\images\icons\ic_photo_24px.svg" />
+    <Content Include="Content\images\icons\ic_place_24px.svg" />
+    <Content Include="Content\images\icons\ic_play_arrow_24px.svg" />
+    <Content Include="Content\images\icons\ic_play_circle_fill_24px.svg" />
+    <Content Include="Content\images\icons\ic_refresh_24px.svg" />
+    <Content Include="Content\images\icons\ic_school_24px.svg" />
+    <Content Include="Content\images\icons\ic_visibility_24px.svg" />
+    <Content Include="Content\images\icons\launch.svg" />
+    <Content Include="Content\images\icons\list_control_down.png" />
+    <Content Include="Content\images\icons\mail.svg" />
+    <Content Include="Content\images\icons\menu.svg" />
+    <Content Include="Content\images\icons\message.svg" />
+    <Content Include="Content\images\icons\more_vert.svg" />
+    <Content Include="Content\images\icons\npm-logo.svg" />
+    <Content Include="Content\images\icons\octicon-repo.svg" />
+    <Content Include="Content\images\icons\Password Recovery Icon.png" />
+    <Content Include="Content\images\icons\print.svg" />
+    <Content Include="Content\images\icons\separator.svg" />
+    <Content Include="Content\images\icons\share-arrow.svg" />
+    <Content Include="Content\images\icons\tabs-arrow.svg" />
+    <Content Include="Content\images\icons\toggle-arrow.svg" />
+    <Content Include="Content\images\icons\twitter.svg" />
+    <Content Include="Content\images\icons\unauthorized.png" />
+    <Content Include="Content\images\icons\upload.svg" />
+    <Content Include="Content\images\IMG-20170425-WA0007.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0008.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0009.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0010.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0011.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0012.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0013.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0014.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0015.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0016.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0017.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0018.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0019.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0020.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0021.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0022.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0023.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0024.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0025.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0026.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0027.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0028.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0029.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0030.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0031.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0032.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0033.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0034.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0035.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0038.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0039.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0041.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0042.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0044.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0045.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0047.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0048.jpg" />
+    <Content Include="Content\images\IMG-20170425-WA0049.jpg" />
+    <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440 - Vertical.jpg" />
+    <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440.jpg" />
+    <Content Include="Content\video\VideoPortada.mp4" />
+    <Content Include="js\controllers\addBlogNewsController.js" />
+    <Content Include="js\controllers\adminBlogNewsController.js" />
+    <Content Include="js\controllers\adminBlogsController.js" />
+    <Content Include="js\controllers\allNewsController.js" />
+    <Content Include="js\controllers\blogController.js" />
+    <Content Include="js\controllers\changePasswordController.js" />
+    <Content Include="js\controllers\chatController.js" />
+    <Content Include="js\controllers\createBlogController.js" />
+    <Content Include="js\controllers\fileUpController.js" />
+    <Content Include="js\controllers\forgotPasswordController.js" />
+    <Content Include="js\controllers\galleryController.js" />
+    <Content Include="js\controllers\chooseBlogController.js" />
+    <Content Include="js\controllers\infPlusController.js" />
+    <Content Include="js\controllers\manageNewsController.js" />
+    <Content Include="js\controllers\manageVideosController.js" />
+    <Content Include="js\controllers\modifyUserDialogController.js" />
+    <Content Include="js\controllers\newsController.js" />
+    <Content Include="js\controllers\newsDialogController.js" />
+    <Content Include="js\controllers\rolecontroller.js" />
+    <Content Include="js\controllers\showAtGallery.js" />
+    <Content Include="js\controllers\showGalleryController.js" />
+    <Content Include="js\controllers\showImgAtHomeController.js" />
+    <Content Include="js\controllers\showVideoController.js" />
+    <Content Include="js\controllers\showVideosController.js" />
+    <Content Include="js\controllers\unauthorizedController.js" />
+    <Content Include="js\controllers\updateBlogNewsController.js" />
+    <Content Include="js\controllers\updateBlogSettingsController.js" />
+    <Content Include="js\controllers\updateMyBlogSettingsController.js" />
+    <Content Include="js\controllers\updateNewsController.js" />
+    <Content Include="js\controllers\updateUserController.js" />
+    <Content Include="js\directives\ngFiles.js" />
+    <Content Include="js\directives\showTemplateVideo.js" />
+    <Content Include="js\services\blogService.js" />
+    <Content Include="js\services\galleryAction.js" />
+    <Content Include="js\services\galleryService.js" />
+    <Content Include="js\services\indexService.js" />
+    <Content Include="js\services\passDataService.js" />
+    <Content Include="js\services\passwordService.js" />
+    <Content Include="js\services\roleService.js" />
+    <Content Include="js\services\newsService.js" />
+    <Content Include="js\services\usersService.js" />
+    <Content Include="js\services\videosService.js" />
+    <Content Include="js\views\authentication\changePassword.html" />
+    <Content Include="js\views\authentication\confirmPassword.html" />
+    <Content Include="js\views\authentication\forgotPassword.html" />
+    <Content Include="js\views\authentication\roles.html" />
+    <Content Include="js\views\authentication\unauthorized.html" />
+    <Content Include="js\views\authentication\updateUser.html" />
+    <Content Include="js\views\blogs\addBlogNews.html" />
+    <Content Include="js\views\blogs\adminBlogNews.html" />
+    <Content Include="js\views\blogs\adminBlogs.html" />
+    <Content Include="js\views\blogs\blog.html" />
+    <Content Include="js\views\blogs\chooseBlog.html" />
+    <Content Include="js\views\blogs\createBlog.html" />
+    <Content Include="js\views\blogs\updateBlogNews.html" />
+    <Content Include="js\views\blogs\updateBlogSettings.html" />
+    <Content Include="js\views\blogs\updateMyBlogSettings.html" />
+    <Content Include="js\views\chat\chat.html" />
+    <Content Include="js\views\information\infPlus.html" />
+    <Content Include="js\views\news\addNews.html" />
+    <Content Include="js\views\news\allNews.html" />
+    <Content Include="js\views\news\fileUpload.html" />
+    <Content Include="js\views\news\gallery.html" />
+    <Content Include="js\views\news\manageNews.html" />
+    <Content Include="js\views\news\newsDialog.html" />
+    <Content Include="js\views\news\showAtGallery.html" />
+    <Content Include="js\views\news\showGallery.html" />
+    <Content Include="js\views\news\showImgAtHome.html" />
+    <Content Include="js\views\news\updateNews.html" />
+    <Content Include="js\views\videos\manageVideos.html" />
+    <Content Include="js\views\videos\showVideos.html" />
+    <Content Include="js\views\videos\videosDialogs\addVideoDialog.html" />
+    <Content Include="js\views\videos\videosDialogs\updateVideoDialog.html" />
+    <Content Include="packages.config" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\video\VideoPortada.webm" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
+    <Content Include="Scripts\angular-aria.js" />
+    <Content Include="Scripts\angular-aria.min.js" />
+    <Content Include="Scripts\angular-local-storage.js" />
+    <Content Include="Scripts\angular-local-storage.min.js" />
+    <Content Include="Scripts\angular-local-storage.min.js.map" />
+    <Content Include="Scripts\angular-material-mocks.js" />
+    <Content Include="Scripts\angular-material.js" />
+    <Content Include="Scripts\angular-material.min.js" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-animate.min.js.map" />
+    <Content Include="Scripts\angular-aria.min.js.map" />
+    <None Include="Properties\PublishProfiles\rocadesalvacion.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="authComplete.html" />
+    <Content Include="Content\css\loading-bar.css" />
+    <Content Include="Content\css\loading-bar.min.css" />
+    <Content Include="Content\css\site.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="js\controllers\associateController.js" />
+    <Content Include="js\controllers\homeController.js" />
+    <Content Include="js\controllers\indexController.js" />
+    <Content Include="js\controllers\infController.js" />
+    <Content Include="js\controllers\loginController.js" />
+    <Content Include="js\controllers\logoutController.js" />
+    <Content Include="js\controllers\refreshController.js" />
+    <Content Include="js\controllers\signupController.js" />
+    <Content Include="js\controllers\tokensManagerController.js" />
+    <Content Include="js\modules\app.js" />
+    <Content Include="js\services\authInterceptorService.js" />
+    <Content Include="js\services\authService.js" />
+    <Content Include="js\services\infService.js" />
+    <Content Include="js\services\tokenManagerService.js" />
+    <Content Include="js\views\authentication\associate.html" />
+    <Content Include="js\views\authentication\login.html" />
+    <Content Include="js\views\authentication\signup.html" />
+    <Content Include="js\views\home\Home.html" />
+    <Content Include="index.html" />
+    <Content Include="js\views\information\inf.html" />
+    <Content Include="js\views\authentication\logout.html" />
+    <Content Include="js\views\authentication\refresh.html" />
+    <Content Include="js\views\authentication\tokens.html" />
+    <Content Include="Scripts\authComplete.js" />
+    <None Include="Scripts\jquery-1.6.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.1.js" />
+    <Content Include="Scripts\jquery-1.6.1.min.js" />
+    <Content Include="Scripts\loading-bar.js" />
+    <Content Include="Scripts\loading-bar.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15278</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:15278/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.2.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.2.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
