@@ -83,7 +83,7 @@ app.controller('homeController', ['$scope', 'authService', 'indexService', '$loc
     $scope.openNews = function (ev, index) {
         $mdDialog.show({
             controller: 'newsDialogController',
-            templateUrl: '../views/news/newsDialog.html',
+            templateUrl: '/js/views/news/newsDialog.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
