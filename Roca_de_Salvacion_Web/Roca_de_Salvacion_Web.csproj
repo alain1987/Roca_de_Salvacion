@@ -182,6 +182,8 @@
     <Content Include="Content\images\IMG-20170425-WA0049.jpg" />
     <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440 - Vertical.jpg" />
     <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440.jpg" />
+    <Content Include="Content\mainImages\PortadaVertical.jpg" />
+    <Content Include="Content\mainImages\Portada.jpg" />
     <Content Include="Content\video\VideoPortada.mp4" />
     <Content Include="js\controllers\addBlogNewsController.js" />
     <Content Include="js\controllers\adminBlogNewsController.js" />
@@ -326,7 +328,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

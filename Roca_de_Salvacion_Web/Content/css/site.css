@@ -69,7 +69,9 @@ md-ink-bar{
 }
 
 .videoContainerBackground{
-    color:#fff;
+    background:url(../mainImages/Portada.jpg) no-repeat fixed center;
+    background-size:cover;
+    /*color:#fff;*/
     z-index:2;
 }
 
@@ -708,9 +710,9 @@ footer .glyphicon:hover{
             display:none;
         }
         .videoContainerBackground{
-            background-image:url(../images/IMG-20170425-WA0007.jpg);
-            background-repeat:no-repeat;
+            background:url(../mainImages/PortadaVertical.jpg) no-repeat fixed center;
             background-size:cover;
+            z-index:1;
         }
 
     }    
