@@ -368,14 +368,14 @@ md-ink-bar{
 }
 
 .navbar1 .navbar-nav li a {
-    color: #112D4E;
+    color: #F9F7F7;
     text-decoration:none;
     position: relative;
  
 }
 
 .navbar1 .navbar-nav li a:hover {
-    color: #112D4E;
+    color: #F9F7F7;
 }
 
 .navbar1 .navbar-nav li a:before{
@@ -385,7 +385,7 @@ md-ink-bar{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #112D4E;
+  background-color: #F9F7F7;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
