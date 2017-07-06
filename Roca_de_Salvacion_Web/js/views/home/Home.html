@@ -40,15 +40,11 @@
         <br />
         <br />
         <br />
-        <div>
-            <!--<img src="../../../Content/images/IMG-20170425-WA0039.jpg" class="img-responsive img-rounded portada" />-->
+        <div id="presentation">
             <h1 class="myTextColor4 myFontStyle1" style="font-size:60px;"><b>Roca de Salvaci&oacute;n</b></h1>
             <p class="myFontStyle2 myTextColor4" style="font-size:30px;"><b>Ministerio de alabanza y adoraci&oacute;n</b></p>
             <br />
             <br />
-            <!-- <div class="form-inline">
-            <input type="email" class="form-control" size="50" placeholder="Email Adress" />
-            <button class="btn btn-default btn-success">Suscribe</button>-->
 
             <div>
                 <a id="start" href="#acerca_de" class="md-button md-raised md-primary">Con&oacute;cenos ya!</a>
@@ -58,7 +54,7 @@
 </div>
 
 <!--Acerca de-->
-<div class="container-fluid myBg3" id="acerca_de">
+<div class="container-fluid resenaBackgorund" id="acerca_de">
     <div class="container sectionHeight">
         <div class="row">
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
@@ -110,7 +106,7 @@
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 
-                <a class="myTextColor4 noUnderline" href="https://store.cdbaby.com/Artist/RocadeSalvacion">
+                <a class="myTextColor4 noUnderline" target="_blank" href="https://store.cdbaby.com/Artist/RocadeSalvacion">
                     <span class="glyphicon glyphicon-cd small-logo"></span>
                     <h4 class="myTextColor4">CD Baby</h4>
                 CD Baby</a>
@@ -136,8 +132,8 @@
     </div>
 </div>
 <!--Pictures-->
-<div class="container-fluid myBg4" id="news" style="padding-top:35px;">
-    <div class="container text-center sectionHeight">
+<div class="container-fluid backgroundNews" id="news" style="padding-top:35px;">
+    <div class="text-center sectionHeight">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 myBg2" style="padding:20px 0px 20px 0px;">
                 <h1 class="myFontStyle1 myTextColor4">Noticias</h1>
@@ -149,7 +145,7 @@
         <div class="myNewsContainer inline slideHide" ng-repeat="n in news">
             <div class="myNews">
                 <img ng-src="{{n.urlImagen}}" height="127" style="width:100%;" />
-                <p class="myTextColor1 myFontStyle2">{{n.description}}</p>
+                <p class="myTextColor4 myFontStyle2">{{n.description}}</p>
                 <md-button class="md-raised md-primary" ng-click="openNews($event,$index)">Leer Noticia completa</md-button>
             </div>
         </div>
@@ -159,40 +155,13 @@
         </div>
     </div>
 </div>
-<!--<div class="row" style="padding:5px 30px 5px 30px !important;">
-    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">&nbsp;</div>
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 myNews">
-        <img src="../../../Content/images/IMG-20170425-WA0047.jpg" height="127" style="width:100%;" />
-        <p class="myTextColor1">Ministrando en el culto de resurreci&oacute;n en nuestra iglesia Centro de Avivamiento Cristiano...</p>
-        <a href="#" class="myTextColor2">Ver Mas >></a>
-    </div>
-    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 myNews">
-        <img src="../../../Content/images/IMG-20170425-WA0023.jpg" height="127" style="width:100%;" />
-        <p class="myTextColor1">Culto de crucificci&oacuten en nuestra iglesia Centro de Avivamiento Cristiano</p>
-        <a href="#" class="myTextColor2">Ver Mas >></a>
-    </div>
-    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 myNews">
-        <img src="../../../Content/images/IMG-20170425-WA0014.jpg" height="127" style="width:100%;" />
-        <p>Ministraci&oacute;n a matrimonios en una visita a una iglesia hermana...</p>
-        <a href="#" class="myTextColor2">Ver Mas >></a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a><h3 class="myTextColor1">Ver m&aacute;s noticias...>></h3></a></div>
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
-</div>-->
-<!--Videos-->
-<div class="container-fluid myBg4" id="pictures">
+<!--Imagenes-->
+<div class="container-fluid imagesBackround" id="pictures">
     <div class="container text-center slideHide " style="height:640px;">
         <div class="row">
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                <h1 class="myTextColor1 myGallery myFontStyle1">Galeria</h1>
+                <h1 class="myTextColor4 myGallery myFontStyle1">Galer&iacute;a</h1>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>

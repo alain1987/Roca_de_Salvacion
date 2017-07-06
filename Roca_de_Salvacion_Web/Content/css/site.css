@@ -114,6 +114,28 @@ md-ink-bar{
     background-color:#F9F7F7;
 }
 
+.backgroundNews{
+    background:url(../mainImages/newsBackground.jpg) no-repeat center;
+    background-size:cover;
+    z-index:1;
+
+}
+
+.resenaBackgorund{
+    background:url(../mainImages/graytogreen.jpg) no-repeat center;
+    background-size:cover;
+    z-index:1;
+}
+
+.imagesBackround{
+            background:-webkit-linear-gradient(#112D4E,#DBE2EF);
+            background: -o-linear-gradient(#112D4E,#DBE2EF);
+            background: -moz-linear-gradient(#112D4E,#DBE2EF);
+            background: linear-gradient(#112D4E,#DBE2EF);
+            background-size:cover;
+            z-index:1;
+        }
+
 .myFloatingButton{
     position: fixed; 
     bottom: 20px; 
@@ -727,8 +749,24 @@ footer .glyphicon:hover{
             background-size:cover;
             z-index:1;
         }
+        .backgroundNews{
+            background:url(../mainImages/newsBackground.jpg) no-repeat center;
+            background-size:cover;
+            z-index:1;
+        }
+        .logsign a{
+            color:#112D4E;
+        }
 
-    }    
+        #presentation h1{
+            color:#3F72AF;
+        }
+
+        #presentation p{
+            color:#3F72AF;
+        }
+
+}    
     /*
 
 

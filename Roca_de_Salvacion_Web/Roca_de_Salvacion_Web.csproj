@@ -182,6 +182,8 @@
     <Content Include="Content\images\IMG-20170425-WA0049.jpg" />
     <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440 - Vertical.jpg" />
     <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440.jpg" />
+    <Content Include="Content\mainImages\newsBackground.jpg" />
+    <Content Include="Content\mainImages\graytogreen.jpg" />
     <Content Include="Content\mainImages\PortadaVertical.jpg" />
     <Content Include="Content\mainImages\Portada.jpg" />
     <Content Include="Content\video\VideoPortada.mp4" />

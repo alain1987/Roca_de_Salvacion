@@ -12,16 +12,22 @@
 
         <md-dialog-content>
             <div class="md-dialog-content">
-                <h2>{{myNews.title}}</h2>
-                <p>
-                    {{myNews.description}}
-                </p>
-
-                <img style="margin: auto; max-width: 80%;"  ng-src="{{myNews.urlImagen}}">
-
-                <p>
-                    {{myNews.texto}}
-                </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <img style="margin: auto; max-width: 80%;" ng-src="{{myNews.urlImagen}}">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h2>{{myNews.title}}</h2>
+                            <p>
+                                {{myNews.description}}
+                            </p>
+                            <p>
+                                {{myNews.texto}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </md-dialog-content>
 
