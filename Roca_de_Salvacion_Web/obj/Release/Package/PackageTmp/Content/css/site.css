@@ -140,6 +140,10 @@ md-ink-bar{
     padding:10px;
 }
 
+.noUnderline{
+    text-decoration:none !important;
+}
+
 .myTextColor1{
     color:#112D4E;
 }
@@ -665,6 +669,10 @@ footer .glyphicon:hover{
             -moz-border-radius:0;
         }
 
+        #rcsNavbar{
+            background-color:#3F72AF;
+        }
+
             .navbar li a, .navbar .navbar-brand {
                 color: #fff !important;
             }
@@ -679,7 +687,12 @@ footer .glyphicon:hover{
 
         .nav > li > a:focus, .nav > li > a:hover {
             text-decoration: none;
+            color:#3F72AF !important;
             background-color: #F9F7F7;
+            transition:all 0.3s;
+            -webkit-transition:all 0.3s;
+            -o-transition:all 0.3s;
+            -moz-transition:all 0.3s;
         }
 
         .navbar-default .navbar-toggle {

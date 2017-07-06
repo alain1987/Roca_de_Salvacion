@@ -103,19 +103,23 @@
         <br />
         <div class="row slideHide">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <span class="glyphicon glyphicon-font small-logo myTextColor4"></span>
-                <h4 class="myTextColor4">Amazon</h4>
-                <a class="myTextColor4" target="_blank" href="https://www.amazon.com/Crey%C3%B3-Roca-Salvaci%C3%B3n/dp/B071WHQNVS/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1496952860&sr=1-1-mp3-albums-bar-strip-0&keywords=roca+de+Salvacion">amazon.com</a>
+                <a class="myTextColor4 noUnderline" target="_blank" href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-music&field-keywords=Roca+de+Salvacion">
+                    <span class="glyphicon glyphicon-font small-logo myTextColor4"></span>
+                    <h4 class="myTextColor4">Amazon</h4>
+                amazon.com</a>
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <span class="glyphicon glyphicon-music small-logo"></span>
-                <h4 class="myTextColor4">iTunes</h4>
-                <a class="myTextColor4" href="itunes.com">itunes.com</a>
+                
+                <a class="myTextColor4 noUnderline" href="https://store.cdbaby.com/Artist/RocadeSalvacion">
+                    <span class="glyphicon glyphicon-cd small-logo"></span>
+                    <h4 class="myTextColor4">CD Baby</h4>
+                CD Baby</a>
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <span class="glyphicon glyphicon-headphones small-logo"></span>
-                <h4 class="myTextColor4">GooglePlay</h4>
-                <a class="myTextColor4" target="_blank" href="https://play.google.com/store/music/album?id=Browanmlosjmyayw63k3vwswwmu&tid=song-Tgun4wbgf2ozjlh4v4kfuzyh6hu">googleplay.com</a>
+                <a class="myTextColor4 noUnderline" target="_blank" href="https://play.google.com/store/music/artist/Roca_de_Salvaci%C3%B3n?id=A2ubd4bysdhsanwl43qgmjz57xe">
+                    <span class="glyphicon glyphicon-headphones small-logo"></span>
+                    <h4 class="myTextColor4">GooglePlay</h4>
+                googleplay.com</a>
             </div>
         </div>
         <div class="row slideHide">
@@ -132,14 +136,20 @@
     </div>
 </div>
 <!--Pictures-->
-<div class="container-fluid myBg1" id="news">
+<div class="container-fluid myBg4" id="news" style="padding-top:35px;">
     <div class="container text-center sectionHeight">
-        <h1 class="myFontStyle1 myTextColor4">Noticias</h1>
-        <hr />
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 myBg2" style="padding:20px 0px 20px 0px;">
+                <h1 class="myFontStyle1 myTextColor4">Noticias</h1>
+            </div>
+        </div>
+       <!-- <hr />-->
+        <br />
+        <br />
         <div class="myNewsContainer inline slideHide" ng-repeat="n in news">
             <div class="myNews">
                 <img ng-src="{{n.urlImagen}}" height="127" style="width:100%;" />
-                <p class="myTextColor4 myFontStyle2">{{n.description}}</p>
+                <p class="myTextColor1 myFontStyle2">{{n.description}}</p>
                 <md-button class="md-raised md-primary" ng-click="openNews($event,$index)">Leer Noticia completa</md-button>
             </div>
         </div>
