@@ -5,17 +5,17 @@
         &nbsp;
     </div>
     <div class="col-md-8">
-        <h3>Asociar su cuenta {{registerData.provider}}</h3>
+        <h3 class="myFontStyle2">Asociar su cuenta {{registerData.provider}}</h3>
         <hr />
-        <p class="text-success">Se ha autenticado exitosamente con <strong>{{registerData.provider}} </strong>. Por favor ponga su nombre debajo y de en el boton de registrar.</p>
+        <p class="text-success">Se ha autenticado exitosamente con <strong>{{registerData.provider}} </strong>. Por favor ponga su nombre debajo y presione en el boton Registrar.</p>
         <div class="row">
             <div class="col-md-3">
                 &nbsp;
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Username" data-ng-model="registerData.userName" required autofocus>
-                    <button class="btn btn-sm btn-info btn-block" type="button" style="margin-top:10px;" data-ng-click="registerExternal()">Register</button>
+                    <input type="text" class="form-control" placeholder="Nombre de Usuario" data-ng-model="registerData.userName" required autofocus>
+                    <md-button class="md-raised md-primary" type="button" style="margin-top:10px;" data-ng-click="registerExternal()">Registrar</md-button>
                 </div>
                 <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
                     {{message}}

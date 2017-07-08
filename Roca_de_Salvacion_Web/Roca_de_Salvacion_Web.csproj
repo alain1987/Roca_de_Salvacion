@@ -66,13 +66,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\angular-material.css" />
-    <Content Include="Content\angular-material.layout-attributes.css" />
-    <Content Include="Content\angular-material.layout-attributes.min.css" />
-    <Content Include="Content\angular-material.layouts.css" />
-    <Content Include="Content\angular-material.layouts.ie_fixes.css" />
-    <Content Include="Content\angular-material.layouts.min.css" />
-    <Content Include="Content\angular-material.min.css" />
     <Content Include="Content\css\angular-material.css" />
     <Content Include="Content\css\angular-material.layout-attributes.css" />
     <Content Include="Content\css\angular-material.layout-attributes.min.css" />
@@ -80,6 +73,7 @@
     <Content Include="Content\css\angular-material.layouts.ie_fixes.css" />
     <Content Include="Content\css\angular-material.layouts.min.css" />
     <Content Include="Content\css\angular-material.min.css" />
+    <Content Include="Content\data-table.css" />
     <Content Include="Content\images\Fondo-lila-luz-línea - Horizontal.jpg" />
     <Content Include="Content\images\Fondo-lila-luz-línea.jpg" />
     <Content Include="Content\images\icons\addShoppingCart.svg" />
@@ -182,11 +176,11 @@
     <Content Include="Content\images\IMG-20170425-WA0049.jpg" />
     <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440 - Vertical.jpg" />
     <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440.jpg" />
+    <Content Include="Content\mainImages\BlancoAzul.jpg" />
     <Content Include="Content\mainImages\newsBackground.jpg" />
-    <Content Include="Content\mainImages\graytogreen.jpg" />
+    <Content Include="Content\mainImages\NewsVertical.jpg" />
     <Content Include="Content\mainImages\PortadaVertical.jpg" />
     <Content Include="Content\mainImages\Portada.jpg" />
-    <Content Include="Content\video\VideoPortada.mp4" />
     <Content Include="js\controllers\addBlogNewsController.js" />
     <Content Include="js\controllers\adminBlogNewsController.js" />
     <Content Include="js\controllers\adminBlogsController.js" />
@@ -265,23 +259,13 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Scripts\angular-animate.js" />
-    <Content Include="Scripts\angular-animate.min.js" />
-    <Content Include="Scripts\angular-aria.js" />
-    <Content Include="Scripts\angular-aria.min.js" />
     <Content Include="Scripts\angular-local-storage.js" />
     <Content Include="Scripts\angular-local-storage.min.js" />
     <Content Include="Scripts\angular-local-storage.min.js.map" />
-    <Content Include="Scripts\angular-material-mocks.js" />
-    <Content Include="Scripts\angular-material.js" />
-    <Content Include="Scripts\angular-material.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Scripts\angular-animate.min.js.map" />
-    <Content Include="Scripts\angular-aria.min.js.map" />
-    <Content Include="Content\video\VideoPortada.webm" />
     <None Include="Properties\PublishProfiles\rocadesalvacion.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -320,9 +304,8 @@
     <Content Include="js\views\authentication\refresh.html" />
     <Content Include="js\views\authentication\tokens.html" />
     <Content Include="Scripts\authComplete.js" />
-    <None Include="Scripts\jquery-1.6.1-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.6.1.js" />
-    <Content Include="Scripts\jquery-1.6.1.min.js" />
+    <Content Include="Scripts\data-table.js" />
+    <Content Include="Scripts\data-table.min.js" />
     <Content Include="Scripts\loading-bar.js" />
     <Content Include="Scripts\loading-bar.min.js" />
     <Content Include="Web.config" />
@@ -332,6 +315,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\video\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

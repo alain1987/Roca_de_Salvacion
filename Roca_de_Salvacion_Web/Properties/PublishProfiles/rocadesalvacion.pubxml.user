@@ -16,7 +16,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/05/2017 09:59:26</publishTime>
     </File>
     <File Include="bin/Roca_de_Salvacion_Web.dll">
-      <publishTime>07/06/2017 16:02:09</publishTime>
+      <publishTime>07/07/2017 21:24:24</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>04/24/2017 11:35:18</publishTime>
@@ -211,7 +211,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/09/2017 15:42:31</publishTime>
     </File>
     <File Include="Content/css/site.css">
-      <publishTime>07/06/2017 16:43:30</publishTime>
+      <publishTime>07/07/2017 19:43:01</publishTime>
+    </File>
+    <File Include="Content/data-table.css">
+      <publishTime>07/07/2017 21:11:18</publishTime>
     </File>
     <File Include="Content/fonts/glyphicons-halflings-regular.eot">
       <publishTime>01/09/2017 15:42:52</publishTime>
@@ -534,6 +537,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/images/Manchas-fondo-luz-lila-1920x1440.jpg">
       <publishTime>04/27/2017 11:26:49</publishTime>
     </File>
+    <File Include="Content/mainImages/Blanco y Azul.jpg">
+      <publishTime>07/07/2017 11:44:52</publishTime>
+    </File>
+    <File Include="Content/mainImages/BlancoAzul.jpg">
+      <publishTime>07/07/2017 12:09:03</publishTime>
+    </File>
     <File Include="Content/mainImages/graytogreen.jpg">
       <publishTime>07/06/2017 15:41:37</publishTime>
     </File>
@@ -544,10 +553,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 14:58:10</publishTime>
     </File>
     <File Include="Content/mainImages/newsBackground.jpg">
-      <publishTime>07/06/2017 15:48:22</publishTime>
+      <publishTime>07/07/2017 10:54:40</publishTime>
+    </File>
+    <File Include="Content/mainImages/NewsVertical.jpg">
+      <publishTime>07/07/2017 11:05:47</publishTime>
     </File>
     <File Include="Content/mainImages/Portada.jpg">
-      <publishTime>07/03/2017 16:14:59</publishTime>
+      <publishTime>07/07/2017 11:13:43</publishTime>
     </File>
     <File Include="Content/mainImages/PortadaNews.jpg">
       <publishTime>07/06/2017 10:14:20</publishTime>
@@ -556,7 +568,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/06/2017 10:19:48</publishTime>
     </File>
     <File Include="Content/mainImages/PortadaVertical.jpg">
-      <publishTime>07/03/2017 16:22:25</publishTime>
+      <publishTime>07/07/2017 11:11:19</publishTime>
     </File>
     <File Include="Content/video/VideoPortada.mp4">
       <publishTime>06/30/2017 10:17:31</publishTime>
@@ -565,7 +577,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/30/2017 10:20:49</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>06/21/2017 17:19:39</publishTime>
+      <publishTime>07/07/2017 21:35:30</publishTime>
     </File>
     <File Include="js/controllers/addBlogNewsController.js">
       <publishTime>06/13/2017 16:22:44</publishTime>
@@ -607,7 +619,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/29/2017 17:08:58</publishTime>
     </File>
     <File Include="js/controllers/homeController.js">
-      <publishTime>06/30/2017 15:07:33</publishTime>
+      <publishTime>07/07/2017 17:02:41</publishTime>
     </File>
     <File Include="js/controllers/indexController.js">
       <publishTime>04/07/2017 15:55:39</publishTime>
@@ -619,7 +631,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2017 18:36:35</publishTime>
     </File>
     <File Include="js/controllers/loginController.js">
-      <publishTime>06/08/2017 17:05:06</publishTime>
+      <publishTime>07/07/2017 19:51:37</publishTime>
     </File>
     <File Include="js/controllers/logoutController.js">
       <publishTime>06/08/2017 17:13:38</publishTime>
@@ -643,7 +655,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/08/2017 17:25:08</publishTime>
     </File>
     <File Include="js/controllers/rolecontroller.js">
-      <publishTime>06/13/2017 17:06:39</publishTime>
+      <publishTime>07/07/2017 21:23:04</publishTime>
     </File>
     <File Include="js/controllers/showAtGallery.js">
       <publishTime>06/15/2017 11:59:42</publishTime>
@@ -691,7 +703,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/14/2017 10:43:52</publishTime>
     </File>
     <File Include="js/modules/app.js">
-      <publishTime>06/27/2017 16:20:23</publishTime>
+      <publishTime>07/07/2017 22:00:05</publishTime>
     </File>
     <File Include="js/services/authInterceptorService.js">
       <publishTime>03/10/2017 11:09:48</publishTime>
@@ -736,28 +748,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/06/2017 20:53:57</publishTime>
     </File>
     <File Include="js/views/authentication/associate.html">
-      <publishTime>01/09/2017 15:46:58</publishTime>
+      <publishTime>07/07/2017 17:35:30</publishTime>
     </File>
     <File Include="js/views/authentication/changePassword.html">
-      <publishTime>06/08/2017 16:35:39</publishTime>
+      <publishTime>07/07/2017 19:25:23</publishTime>
     </File>
     <File Include="js/views/authentication/confirmPassword.html">
       <publishTime>05/12/2017 15:57:29</publishTime>
     </File>
     <File Include="js/views/authentication/forgotPassword.html">
-      <publishTime>06/08/2017 16:58:44</publishTime>
+      <publishTime>07/07/2017 19:32:49</publishTime>
     </File>
     <File Include="js/views/authentication/login.html">
-      <publishTime>06/08/2017 17:06:40</publishTime>
+      <publishTime>07/07/2017 19:52:25</publishTime>
     </File>
     <File Include="js/views/authentication/logout.html">
       <publishTime>06/08/2017 17:16:12</publishTime>
     </File>
     <File Include="js/views/authentication/refresh.html">
-      <publishTime>06/08/2017 17:24:06</publishTime>
+      <publishTime>07/07/2017 20:07:38</publishTime>
     </File>
     <File Include="js/views/authentication/roles.html">
-      <publishTime>06/09/2017 18:54:20</publishTime>
+      <publishTime>07/07/2017 21:39:52</publishTime>
     </File>
     <File Include="js/views/authentication/signup.html">
       <publishTime>06/08/2017 17:35:46</publishTime>
@@ -802,7 +814,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/12/2017 19:10:35</publishTime>
     </File>
     <File Include="js/views/home/Home.html">
-      <publishTime>07/06/2017 16:42:37</publishTime>
+      <publishTime>07/07/2017 19:09:17</publishTime>
     </File>
     <File Include="js/views/index.html">
       <publishTime>06/19/2017 16:20:14</publishTime>
@@ -856,7 +868,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/09/2017 15:49:35</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>06/16/2017 17:37:22</publishTime>
+      <publishTime>07/07/2017 21:11:18</publishTime>
     </File>
     <File Include="Scripts/angular-animate.js">
       <publishTime>06/16/2017 17:37:15</publishTime>
@@ -908,6 +920,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/authComplete.js">
       <publishTime>01/09/2017 15:49:25</publishTime>
+    </File>
+    <File Include="Scripts/data-table.js">
+      <publishTime>07/07/2017 21:11:18</publishTime>
+    </File>
+    <File Include="Scripts/data-table.min.js">
+      <publishTime>07/07/2017 21:11:18</publishTime>
     </File>
     <File Include="Scripts/jquery-1.6.1.js">
       <publishTime>06/09/2017 13:53:02</publishTime>

@@ -1,7 +1,6 @@
 ﻿'use strict';
 var app = angular.module('app',
-    ['ngRoute', 'angular-loading-bar', 'ui.bootstrap', 'ngAnimate', 'LocalStorageModule', 'ngMaterial',
-        'ngMdIcons', 'ngSanitize']);
+    ['ngRoute', 'angular-loading-bar', 'ui.bootstrap', 'ngAnimate', 'LocalStorageModule', 'ngMaterial','ngMdIcons', 'ngSanitize', 'datatables']);
 app.config(['$routeProvider',/* '$locationProvider',*/ function ($routeProvider/*, $locationProvider*/) {
     /*$locationProvider.hashPrefix*/
         $routeProvider.when('/', {

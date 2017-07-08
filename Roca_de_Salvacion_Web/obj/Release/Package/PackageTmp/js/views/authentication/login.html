@@ -1,35 +1,37 @@
-﻿<div class="container personalContainer"  id="myLogin">
-    <div class="row text-center">
-        <div class="col-xs-2 col-sm-2 col-md-2"></div>
-        <div class="col-xs-4 col-sm-4 col-md-4">
-            <form class="form-login" role="form">
-                <h2 class="form-login-heading myResponsiveText jumbotron"><b>Acceder al sitio</b></h2>
-                <input type="text" class="form-control myResponsiveText"  placeholder="Usuario" data-ng-model="loginData.userName" required autofocus>
-                <input type="password" class="form-control myResponsiveText"  placeholder="Contraseña" data-ng-model="loginData.password" required>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" data-ng-model="loginData.useRefreshTokens"><strong class="myResponsiveText">Renovar Acceso</strong>
-                    </label>
-                </div>
-                <md-button class="md-raised md-primary" style="width:100%;"  type="submit" data-ng-click="login()">Entrar</md-button>
-                <div>
-                    <a href="#/forgotPassword" class="myResponsiveText">Olvidaste tu contrase&ntilde;a?</a>
-                </div>
-                <md-button class="md-raised md-primary" style="width:100%;" type="submit" data-ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Inicio</md-button>
-                <div data-ng-hide="message == ''" class="alert alert-danger">
-                    {{message}}
-                </div>
-                <br />
-                
-            </form>
+﻿<div class="container-fluid myBg4">
+    <div class="container personalContainer text-center animateShow" id="myLogin">
+        <div class="row text-center">
+            <div class="col-xs-2 col-sm-2 col-md-2"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <form class="form-login" role="form">
+                    <h2 class="form-login-heading myResponsiveText jumbotron"><b>Acceder al sitio</b></h2>
+                    <input type="text" class="form-control myResponsiveText" placeholder="Usuario" data-ng-model="loginData.userName" required autofocus>
+                    <input type="password" class="form-control myResponsiveText" placeholder="Contraseña" data-ng-model="loginData.password" required>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-ng-model="loginData.useRefreshTokens"><strong class="myResponsiveText">Renovar Acceso</strong>
+                        </label>
+                    </div>
+                    <md-button class="md-raised md-primary" style="width:100%;" type="submit" data-ng-click="login()">Entrar</md-button>
+                    <div>
+                        <a href="#/forgotPassword" class="myResponsiveText">Olvidaste tu contrase&ntilde;a?</a>
+                    </div>
+                    <md-button class="md-raised md-primary" style="width:100%;" type="submit" data-ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Inicio</md-button>
+                    <div data-ng-hide="message == ''" class="alert alert-danger">
+                        {{message}}
+                    </div>
+                    <br />
+
+                </form>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <form class="form-login" role="form">
+                    <h2 class="form-login-heading myResponsiveText jumbotron"><b>Cuentas externas</b></h2>
+                    <md-button class="md-raised md-primary myResponsiveText" style="width:100%;" type="submit" data-ng-click="authExternalProvider('Facebook')">Facebook</md-button>
+                    <md-button class="md-raised md-warn myResponsiveText" style="width:100%;" type="submit" data-ng-click="authExternalProvider('Google')">Google+</md-button>
+                </form>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2"></div>
         </div>
-        <div class="col-xs-4 col-sm-4 col-md-4">
-            <form class="form-login" role="form">
-                <h2 class="form-login-heading myResponsiveText jumbotron"><b>Cuentas externas</b></h2>
-                <md-button class="md-raised md-primary myResponsiveText" style="width:100%;" type="submit" data-ng-click="authExternalProvider('Facebook')">Facebook</md-button>
-                <md-button class="md-raised md-warn myResponsiveText" style="width:100%;"  type="submit" data-ng-click="authExternalProvider('Google')">Google+</md-button>
-            </form>
-        </div>
-        <div class="col-xs-2 col-sm-2 col-md-2"></div>
     </div>
 </div>

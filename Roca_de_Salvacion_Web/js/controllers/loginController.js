@@ -2,7 +2,7 @@
 app.controller('loginController', ['$scope', '$location', 'authService', 'ngAuthSettings', 'indexService', 'passDataService',
     function ($scope, $location, authService, ngAuthSettings, indexService, passDataService) {
 
-    $scope.animateClass = "page-enter";
+    /*$scope.animateClass = "page-enter";*/
     $scope.loginData = {
         userName: "",
         password: ""

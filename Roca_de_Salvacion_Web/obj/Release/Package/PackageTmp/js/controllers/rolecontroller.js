@@ -1,11 +1,21 @@
 ﻿'use strict';
-app.controller('roleController', ['$scope', 'roleService', 'usersService', '$q', '$mdDialog', '$location', 'passDataService', function ($scope, roleService, usersService, $q, $mdDialog, $location, passDataService) {
+app.controller('roleController', ['$scope', 'roleService', 'usersService', '$q', '$mdDialog', '$location', 'passDataService', 'DTOptionsBuilder', 'DTColumnBuilder', 'DTColumnDefBuilder',
+    function ($scope, roleService, usersService, $q, $mdDialog, $location, passDataService, DTOptionsBuilder, DTColumnBuilder, DTColumnDefBuilder) {
     $scope.roles = [];
     $scope.usuarios = [];
     $scope.message = "";
     $scope.showRoles = false;
     $scope.roleSelect = "";
     $scope.animateClass = "page-enter";
+
+
+    $scope.vm = {};
+    $scope.vm.dtInstance = {};
+    $scope.vm.dtColumnDefs = [DTColumnDefBuilder.newColumnDef(2).notSortable()];
+    $scope.vm.dtOptions = DTOptionsBuilder.newOptions()
+      .withOption('paging', true)
+      .withOption('searching', true)
+      .withOption('info', true);
 
     actualizar();
     usuariosTemp();

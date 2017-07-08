@@ -1,12 +1,13 @@
 ﻿<!--<video class="videoBg" height="639" preload="auto" style="position:fixed;" autoplay muted loop>
     <source src="../../../Content/video/VideoPortada.webm"/>
 </video>-->
+
 <div class="container-fluid sectionHeight videoContainerBackground">
     <div>
         <nav id="menu" class="navbar1 transparent navbar-fixed-top">
             <div class="container" style="margin-left: 10px;">
                 <div class="navbar-header myBg2" style="height:36px;">
-                    <button type="button" style="margin-top: 0px; margin-bottom: 0px;" class="navbar-toggle" data-toggle="collapse" data-target="#rcsNavbar" >
+                    <button type="button" style="margin-top: 0px; margin-bottom: 0px;" class="navbar-toggle" data-toggle="collapse" data-target="#rcsNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -31,16 +32,17 @@
         </nav>
     </div>
     <div class="text-center">
-        <div class="logsign">
+        <div class="logsign slideRightHide1">
             <a class="btn myTextColor4" href="#/login" ng-hide="authentication.isAuth">Entrar</a>
             <a class="btn myTextColor4" href="#/signup" ng-hide="authentication.isAuth">Registrarse</a>
+            <a class="btn myCursor" ng-show="authentication.isAuth" ng-click="miCuenta()"><b>Mi Cuenta</b></a>
             <a class="btn myCursor" ng-show="authentication.isAuth" ng-click="logout()"><b>Salir</b></a>
         </div>
         <br />
         <br />
         <br />
         <br />
-        <div id="presentation">
+        <div id="presentation" class="slideShowHide1">
             <h1 class="myTextColor4 myFontStyle1" style="font-size:60px;"><b>Roca de Salvaci&oacute;n</b></h1>
             <p class="myFontStyle2 myTextColor4" style="font-size:30px;"><b>Ministerio de alabanza y adoraci&oacute;n</b></p>
             <br />
@@ -52,21 +54,20 @@
         </div>
     </div>
 </div>
-
 <!--Acerca de-->
-<div class="container-fluid resenaBackgorund" id="acerca_de">
+<div class="container-fluid myBg5" id="acerca_de">
     <div class="container sectionHeight">
         <div class="row">
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 slideLeftHide">
                 <h2 class="myFontStyle1">Nosotros</h2>
                 <p class="myFontStyle2" style="padding:30px 0px 30px 30px;">
-                    
-                        El ministerio Roca de Salvaci&oacute;n surgi&oacute; en 1995 luego de aceptar al se&ntilde;or
-                        Jes&uacute;s en la  vida de Frank Pe&ntilde;a, a lo que luego se sum&oacute; su esposa Rosa Emilia Pelaez,
-                        conocida por muchos cari&ntilde;osamente como Toty. Luego tuvieron dos hermosas hijas las cuales luego de una
-                        formaci&oacute;n musical decidieron acompan&ntilde;ar a sus padres en este camino en el cual se ministran las almas y
-                        se exalta al Se&ntilde;or.
-                    
+
+                    El ministerio Roca de Salvaci&oacute;n surgi&oacute; en 1995 luego de aceptar al se&ntilde;or
+                    Jes&uacute;s en la  vida de Frank Pe&ntilde;a, a lo que luego se sum&oacute; su esposa Rosa Emilia Pelaez,
+                    conocida por muchos cari&ntilde;osamente como Toty. Luego tuvieron dos hermosas hijas las cuales luego de una
+                    formaci&oacute;n musical decidieron acompan&ntilde;ar a sus padres en este camino en el cual se ministran las almas y
+                    se exalta al Se&ntilde;or.
+
                 </p>
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 slideHide" style="border-left:1px solid #112D4E;">
@@ -76,46 +77,36 @@
     </div>
 </div>
 
-<!-- <div class="container-fluid myBg1">
-     <div class="row">
-         <div class="col-xs-4 col-sm-4 col-md-4 slideHide">
-             <span class="glyphicon glyphicon-globe logo"></span>
-         </div>
-         <div class="col-xs-8 col-sm-8 col-md-8">
-
-             <h2><strong>Hey:</strong> Header 2</h2>
-             <h4><strong>You:</strong> Header 4</h4>
-             <p>Paragraph</p>
-         </div>
-     </div>
- </div>-->
 <!--Musica-->
 <div class="container-fluid myBg2" id="buy">
     <div class="container text-center sectionHeight">
-        <h3 class="myTextColor3 myFontStyle1">Nuestra M&uacute;sica</h3>
+        <h3 class="myTextColor3 myFontStyle1 slideShowHide">Nuestra M&uacute;sica</h3>
         <br />
-        <h4 class="myTextColor3 myFontStyle2">A trav&eacute;s de las principales plataformas</h4>
+        <h4 class="myTextColor3 myFontStyle2 slideShowHide">A trav&eacute;s de las principales plataformas</h4>
         <hr />
         <br />
         <div class="row slideHide">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 slideLeftHide">
                 <a class="myTextColor4 noUnderline" target="_blank" href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-music&field-keywords=Roca+de+Salvacion">
                     <span class="glyphicon glyphicon-font small-logo myTextColor4"></span>
                     <h4 class="myTextColor4">Amazon</h4>
-                amazon.com</a>
+                    amazon.com
+                </a>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 slideShowHide">
+
                 <a class="myTextColor4 noUnderline" target="_blank" href="https://store.cdbaby.com/Artist/RocadeSalvacion">
                     <span class="glyphicon glyphicon-cd small-logo"></span>
                     <h4 class="myTextColor4">CD Baby</h4>
-                CD Baby</a>
+                    CD Baby
+                </a>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 slideRightHide">
                 <a class="myTextColor4 noUnderline" target="_blank" href="https://play.google.com/store/music/artist/Roca_de_Salvaci%C3%B3n?id=A2ubd4bysdhsanwl43qgmjz57xe">
                     <span class="glyphicon glyphicon-headphones small-logo"></span>
                     <h4 class="myTextColor4">GooglePlay</h4>
-                googleplay.com</a>
+                    googleplay.com
+                </a>
             </div>
         </div>
         <div class="row slideHide">
@@ -131,30 +122,30 @@
         </div>
     </div>
 </div>
-<!--Pictures-->
+<!--Noticias-->
 <div class="container-fluid backgroundNews" id="news" style="padding-top:35px;">
-    <div class="text-center sectionHeight">
+    <div class="container text-center sectionHeight">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 myBg2" style="padding:20px 0px 20px 0px;">
-                <h1 class="myFontStyle1 myTextColor4">Noticias</h1>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20px 0px 20px 0px;">
+                <h1 class="myFontStyle1 myTextColor4 slideShowHide">Noticias</h1>
             </div>
         </div>
-       <!-- <hr />-->
         <br />
         <br />
         <div class="myNewsContainer inline slideHide" ng-repeat="n in news">
             <div class="myNews">
                 <img ng-src="{{n.urlImagen}}" height="127" style="width:100%;" />
                 <p class="myTextColor4 myFontStyle2">{{n.description}}</p>
-                <md-button class="md-raised md-primary" ng-click="openNews($event,$index)">Leer Noticia completa</md-button>
+                <md-button class="md-raised md-primary buttonNews" ng-click="openNews($event,$index)">Leer Noticia completa</md-button>
             </div>
         </div>
         <hr />
         <div class="text-center slideHide">
-            <md-button class="md-raised md-primary" ng-click="allNews()"><span class="glyphicon glyphicon-list-alt"></span> | Ver mas noticias</md-button>
+            <md-button class="md-raised md-primary buttonNews" ng-click="allNews()"><span class="glyphicon glyphicon-list-alt"></span> | Ver mas noticias</md-button>
         </div>
     </div>
 </div>
+
 <!--Imagenes-->
 <div class="container-fluid imagesBackround" id="pictures">
     <div class="container text-center slideHide " style="height:640px;">
@@ -187,32 +178,32 @@
 </div>
 
 <!--Videos-->
-<div class="container-fluid myBg2" id="videos">
+<div class="container-fluid backgroundVideo" id="videos">
     <div class="container text-center sectionHeight">
-        <h1 class="myTextColor3 myFontStyle1">Videos</h1>
-        <p class="myTextColor3 myFontStyle2">Fueron filmados durante ministraciones en distintas iglesias, as&iacute; como en ensayos y grabaciones</p>
+        <h1 class="myTextColor3 myFontStyle1">&nbsp;</h1>
+        <p class="myTextColor2 myFontStyle2 slideShowHide">Fueron filmados durante ministraciones en distintas iglesias, as&iacute; como en ensayos y grabaciones</p>
         <br />
         <br />
         <br />
         <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding:30px 0px 30px 30px;">
-                <h2 class="slideHide myTextColor4 myFontStyle1">{{myVideo.name}}</h2>
-                <p style="text-align:left;" class="slideHide myTextColor4 myFontStyle2">
-                        {{myVideo.videoDescription}}
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 slideLeftHide" style="padding:30px 0px 30px 30px;">
+                <h2 class="myTextColor4 myFontStyle1">{{myVideo.name}}</h2>
+                <p style="text-align:left;" class="myTextColor4 myFontStyle2">
+                    {{myVideo.videoDescription}}
                 </p>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 slideHide" style="border-left:1px solid lightgrey;">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 slideRightHide">
                 <div>{{videoMessage}}</div>
                 <div ng-bind-html="myVideo.urlVideo" class="myVideoContainer"></div>
                 <!--<iframe style="width:80%;height:350px;" src="https://www.youtube.com/embed/XFLD0tXvt_I" frameborder="0" allowfullscreen></iframe>-->
             </div>
         </div>
         <br />
-        <div class="text-center ">
-        <md-button class="md-raised md-primary slideHide" ng-click="showAllVideos()">
-            <h4><span class="glyphicon glyphicon-eye-open"></span> | Ver mas videos</h4>
-        </md-button>
+        <div class="text-center slideHide">
+            <md-button class="md-raised md-primary " ng-click="showAllVideos()">
+                <h4><span class="glyphicon glyphicon-eye-open"></span> | Ver mas videos</h4>
+            </md-button>
         </div>
     </div>
 </div>
@@ -223,15 +214,15 @@
 <!--Contact-->
 <div class="container-fluid myBg3" id="contact">
     <div class="container sectionHeight">
-        <h1 class="text-center myResponsiveText myTextColor1 myFontStyle2">
+        <h1 class="text-center myResponsiveText myTextColor1 myFontStyle2 slideShowHide">
             Contact&aacute;ctanos para que oremos
             <br />
             por ti o ministremos en tu iglesia
         </h1>
-        <div class="row slideHide">
+        <div class="row">
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 slideLeftHide">
                 <p class="myFontStyle2"><b>Contactanos a trav&eacute;s de:</b></p>
                 <p class="myTextColor1 myFontStyle2"><span class="glyphicon glyphicon-map-marker"></span> Miami, US</p>
                 <p class="myTextColor1 myFontStyle2"><span class="glyphicon glyphicon-envelope"></span> rocadesalvacion95@gmail.com</p>
@@ -239,10 +230,10 @@
             <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
             </div>
         </div>
-        <div class="row slideHide">
+        <div class="row">
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
             </div>
-            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 slideRightHide">
                 <div id="googleMap" style="width:100% ;height:400px;"></div>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
@@ -251,8 +242,6 @@
     </div>
 </div>
 
-<!--<br />
-<br />-->
 <footer class="container text-center" style="background-color:black;width:100%;height:60px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;">
     <div class="container">
         <div class="row">
@@ -268,6 +257,10 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        setTimeout(function () { $(".slideRightHide1").addClass("animateFromRight") }, 3000);
+
+        setTimeout(function () { $(".slideShowHide1").addClass("animateShow"); }, 3000);
+    
         //Active Class
         $("#menu a").on("click", function () {
             $("#menu").find(".active").removeClass("active");
@@ -320,6 +313,34 @@
                     $(this).addClass("animateOnSlide");
                 }
             });
+            $(".slideLeftHide").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("animateFromLeft");
+                }
+            });
+            $(".slideRightHide").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("animateFromRight");
+                }
+            });
+            
+            $(".slideShowHide").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("animateShow");
+                }
+            });
+            
+
+
             $("#menu").each(function () {
                 var pos = $(this).offset().top;
 
@@ -332,44 +353,4 @@
             });
         });
     });
-</script>
-
-<script type="text/ng-template" id="myNews.html">
-    <md-dialog aria-label="">
-        <form ng-cloak>
-            <md-toolbar>
-                <div class="md-toolbar-tools">
-                    <h2>{{n.title}}</h2>
-                    <span flex></span>
-                    <md-button class="md-icon-button" ng-click="cancel()">
-                        <md-icon md-svg-src="../../..Content/images/icons/ic_close_24px.svg" aria-label="Cerrar"></md-icon>
-                    </md-button>
-                </div>
-            </md-toolbar>
-
-            <md-dialog-content>
-                <div class="md-dialog-content">
-                    <h2>{{n.title}}</h2>
-                    <p>
-                        {{n.description}}
-                    </p>
-
-                    <img style="margin: auto; max-width: 100%;" alt="Lush mango tree" ng-src="{{n.urlImagen}}">
-                    <p>
-                        {{n.texto}}
-                    </p>
-                </div>
-            </md-dialog-content>
-
-            <md-dialog-actions layout="row">
-                <md-button href="#" md-autofocus>
-                    Mas Noticias
-                </md-button>
-                <span flex></span>
-                <md-button ng-click="cancel()">
-                    Cerrar
-                </md-button>
-            </md-dialog-actions>
-        </form>
-    </md-dialog>
 </script>
