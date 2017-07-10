@@ -15,6 +15,7 @@ app.controller('updateUserController', ['$scope', 'passDataService', '$timeout',
         } else {
             infService.getInfRule().then(function (response) {
                 $scope.user = passDataService.get();
+                oldRole($scope.user.id);
             }, function (error) {
                 alert(error.data.message);
             });
@@ -41,8 +42,8 @@ app.controller('updateUserController', ['$scope', 'passDataService', '$timeout',
         }, function (error) {
             alert(error.data.message);
         });
-    };
-    oldRole($scope.user.id);
+    }
+    
 
     //Modificar Permisos y roles
     $scope.setUserRole = function (ev, user) {

@@ -12,18 +12,23 @@
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                 <div class="table-responsive">
-                    <table class="table table-hover" style="position:center;">
+                    <table class="table table-hover" style="position:center;" st-table="r" st-safe-src="roles">
+                        <tr id="search">
+                            <th colspan="3">
+                                <input st-search placeholder="B&uacute;squeda" class="input-sm form-control" type="search" />
+                            </th>
+                        </tr>
                         <thead style="background-color:rgb(63,81,181);color:white;">
                             <tr>
                                 <th></th>
-                                <th>Usuario</th>
-                                <th>Rol</th>
+                                <th class="myCursor" st-sort="user">Usuario</th>
+                                <th class="myCursor" st-sort="rol">Rol</th>
                                 <th> Acciones</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="role in roles">
+                            <tr st-select-row="row" st-select-mode="multiple" ng-repeat="role in r">
                                 <td></td>
                                 <td>{{role.username}}</td>
                                 <td>{{role.role}}</td>
@@ -38,6 +43,13 @@
                                     </md-button>
                                 </td>
                         </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" class="text-center">
+                                    <div st-pagination="" st-items-by-page="itemsByPage"></div>
+                                </td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 ﻿'use strict';
 app.controller('signupController', ['$scope', '$location', '$timeout', 'authService', 'passDataService',
     function ($scope, $location, $timeout, authService, passDataService) {
-    $scope.animateClass = "page-enter";
+    //$scope.animateClass = "page-enter";
     $scope.savedSuccessfully = false;
     $scope.message = "";
 

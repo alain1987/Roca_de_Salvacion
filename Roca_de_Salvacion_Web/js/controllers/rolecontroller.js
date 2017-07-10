@@ -6,6 +6,7 @@ app.controller('roleController', ['$scope', 'roleService', 'usersService', '$q',
     $scope.showRoles = false;
     $scope.roleSelect = "";
     $scope.animateClass = "page-enter";
+   
 
     actualizar();
     usuariosTemp();
