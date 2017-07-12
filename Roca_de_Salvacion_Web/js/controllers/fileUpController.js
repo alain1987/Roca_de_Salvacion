@@ -2,7 +2,7 @@
 app.controller('fileUpController', ['$scope', '$http', 'ngAuthSettings', '$location', 'passDataService', 'infService',
     function ($scope, $http, ngAuthSettings, $location, passDataService, infService) {
     var formData = new FormData();
-    $scope.animateClass = "page-enter";
+    //$scope.animateClass = "page-enter";
 
     $scope.getTheFiles = function ($files) {
         $scope.imagesrc = [];

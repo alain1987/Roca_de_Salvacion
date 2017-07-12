@@ -1,10 +1,23 @@
-﻿<div class="container-fluid myBg2">
+﻿<div class="container-fluid myBg4" style="padding-top:25px;">
     <div class="container">
-            <h3 class="jumbotron">Noticias</h3>
+            <h3 class="jumbotron myFontStyle1">Noticias</h3>
             <md-button ng-click="home()" class="md-raised md-primary"><span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio</md-button>
         </div>
         <div class="container">
-            <div ng-repeat="n in news" class="panel panel-default text-center" style="width:270px;">
+            <div ng-repeat="n in news" class="row">
+                    <h3 class="myFontStyle2 animateFromLeft">{{n.title}}</h3>
+                <hr />
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <img class="animateShow" ng-src="{{n.urlImagen}}" style="max-width:100%;width:100%;height:140px;" />
+                    </div>
+                    
+               
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 animateFromRight">
+                    <p class="myTextColor1">{{n.description}}</p>
+                    <md-button ng-click="openNews($event,$index)" style="cursor:pointer;" class="md-raised md-primary">Ver Noticia</md-button>
+                </div>
+            </div>
+            <!--<div ng-repeat="n in news" class="panel panel-default text-center" style="width:270px;">
                 <div class="panel-heading" style="border-bottom-width:0px">
                     <h3>{{n.title}}</h3>
                 </div>
@@ -15,6 +28,6 @@
                     <p class="myTextColor4">{{n.description}}</p>
                     <button ng-click="openNews($event,$index)" style="cursor:pointer;" class="btn btn-lg">Ver Noticia</button>
                 </div>
-            </div>
+            </div>-->
     </div>
 </div>

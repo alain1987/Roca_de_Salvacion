@@ -1,10 +1,13 @@
 ﻿<div class="container-fluid myBg2">
     <div class="container">
-        <h3 class="jumbotron">Publicar Noticia</h3>
-        <md-content layout-padding="">
+        <h3 class="jumbotron animateShow">Publicar Noticia</h3>
+        <md-content layout-padding="" class="animateFromRight">
             <form name="projectForm">
                 <md-input-container>
-                    <img ng-src="{{img_src}}" style="border-radius:5px;box-shadow:1px 2px 4px rgba(0, 0, 0,0.5); width:80px;height:100px;" />
+                    <md-button class="md-raised md-primary" ng-click="selectImage()"> Seleccionar Imagen</md-button>
+                    <div ng-show="showPic">
+                        <img ng-show="showPic" ng-src="{{img_src}}" style="border-radius:5px;box-shadow:1px 2px 4px rgba(0, 0, 0,0.5); width:80px;height:100px;" />
+                    </div>
                 </md-input-container>
                     <md-input-container class="md-block">
                         <label>T&iacute;tulo de la noticia:</label>

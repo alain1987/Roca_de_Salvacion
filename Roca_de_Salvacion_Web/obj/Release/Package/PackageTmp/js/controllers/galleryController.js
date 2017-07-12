@@ -4,7 +4,7 @@ app.controller('galleryController', ['$scope', 'galleryService', 'ngAuthSettings
     function ($scope, galleryService, ngAuthSettings, passDataService, $location, galleryAction,$mdDialog) {
     $scope.images = null;
     $scope.base = ngAuthSettings.apiServiceBaseUri;
-    $scope.animateClass = "page-enter";
+    //$scope.animateClass = "page-enter";
     function images() {
         galleryService.getAllImages().then(function (response) {
             $scope.images = response.data;

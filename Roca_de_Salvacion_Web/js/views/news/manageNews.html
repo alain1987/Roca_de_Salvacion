@@ -1,14 +1,19 @@
-﻿<div class="container-fluid myBg2 sectionHeight">
-    <div class="container">
-        <h3 class="jumbotron">Noticias</h3>
+﻿<div class="container-fluid myBg2 sectionHeight" style="padding-top:25px;">
+    <div class="container animateShow">
+        <h3 class="jumbotron myFontStyle1">Noticias</h3>
         <md-button ng-click="publish()" class="md-raised md-primary"><span class="glyphicon glyphicon-plus"></span> | Publicar Noticia</md-button>
         <md-button ng-click="home()" class="md-raised md-primary"><span class="glyphicon glyphicon-arrow-left"></span> | Volver al inicio</md-button>
         <md-button class="md-raised md-primary" ng-disabled="show" ng-click="updateNewsIsShow()"><span class="glyphicon glyphicon-eye-open"></span> | Mostrar al inicio</md-button>
     </div>
     <div class="container">
         <div class="table-responsive">
-            <table class="table table-hover" style="position:center;width:80%;margin:0 auto;">
+            <table class="table table-hover animateFromRight" style="position:center;width:80%;margin:0 auto;" st-table="new" st-safe-src="news">
                 <thead>
+                    <tr id="search">
+                        <th colspan="3">
+                            <input st-search placeholder="B&uacute;squeda" class="input-sm form-control" type="search" />
+                        </th>
+                    </tr>
                     <tr>
                         <th>Mostrar en Inicio</th>
                         <th>Titulo</th>
@@ -18,7 +23,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="n in news">
+                    <tr ng-repeat="n in new">
                         <td><input type="checkbox" id="{{n.id}}" ng-checked="{{n.isShow}}" ng-click="check($index)" /></td>
                         <td>{{n.title}}</td>
                         <td>{{n.description}}</td>
@@ -26,6 +31,13 @@
                         <td><md-button class="md-raised md-primary" ng-click="deleteNews(n)"><span class="glyphicon glyphicon-minus"></span> | Eliminar</md-button></td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            <div st-pagination="" st-items-by-page="itemsByPage"></div>
+                        </td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
         <!--    <div class="row">

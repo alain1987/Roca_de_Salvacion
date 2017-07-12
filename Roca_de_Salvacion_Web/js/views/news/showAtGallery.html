@@ -1,14 +1,14 @@
 ﻿<div class="container-fluid myBg2 sectionHeight">
     <div class="container">
         <div>
-            <h3 class="jumbotron">Seleccione las im&aacute;genes que se mostrar&aacute;n en la Galeriacute;a</h3>
+            <h3 class="jumbotron animateFromLeft myFontStyle1">Seleccione las im&aacute;genes que se mostrar&aacute;n en la Galer&iacute;a</h3>
         </div>
         <hr />
-        <div>
+        <div class="animateFromRight">
             <md-button ng-click="home()" class="md-raised md-primary"><span class="glyphicon glyphicon-arrow-left"></span> | Volver al inicio</md-button>
             <md-button ng-disabled="show" ng-click="showAtGallery()" class="md-raised md-primary"><span class="glyphicon glyphicon-eye-open"></span> | Mostrar en la Galer&iacute;a</md-button>
         </div>
-        <div ng-repeat="image in images" class="inline">
+        <div ng-repeat="image in images" class="inline animateShow">
             <input id="{{image.id}}" type="checkbox" ng-checked="{{image.showAtGallery}}" ng-click="check($index)" />
             <a data-fancybox="gallery" ng-href="{{base+image.fileName}}">
                 <img class="galleryImages img-responsive" ng-src="{{base+image.fileName}}" title="{{image.name}}" />

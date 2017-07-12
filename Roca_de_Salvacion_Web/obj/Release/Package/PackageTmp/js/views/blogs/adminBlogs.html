@@ -1,4 +1,4 @@
-﻿<div class="container personalContainer">
+﻿<div class="container personalContainer animateShow">
     <div>
         <h3 class="jumbotron">Administrar Blogs</h3>
     </div>
@@ -12,9 +12,14 @@
     <div class="row">
         <div class="col-sm-1 col-xs-1 colmd-1 col-lg-1"></div>
         <div class="col-sm-10 col-xs-10 colmd-10 col-lg-10">
-            <div class=" table-responsive">
-                <table class="table">
+            <div class="table-responsive">
+                <table class="table" st-table="b" st-safe-src="blogs">
                     <thead>
+                        <tr id="search">
+                            <th colspan="2">
+                                <input st-search placeholder="B&uacute;squeda" class="input-sm form-control" type="search" />
+                            </th>
+                        </tr>
                         <tr>
                             <th>Nombre</th>
                             <th>Accion</th>
@@ -22,12 +27,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="blog in blogs">
+                        <tr ng-repeat="blog in b">
                             <td>{{blog.name}}</td>
-                            <td><md-button class="md-raised md-primary" ng-click="openDeleteBlog($event, blog.id)">Eliminar <span class="glyphicon glyphicon-minus"></span></md-button></td>
+                            <td><md-button class="md-raised md-primary" ng-click="openDeleteBlog($event, blog.id,$index)">Eliminar <span class="glyphicon glyphicon-minus"></span></md-button></td>
                             <td><md-button class="md-raised md-primary" ng-click="openUpdateBlog(blog)">Modificar <span class="glyphicon glyphicon-pencil"></span></md-button></td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-center">
+                                <div st-pagination="" st-items-by-page="itemsByPage"></div>
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
         </div>

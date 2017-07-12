@@ -1,13 +1,18 @@
-﻿<div class="container-fluid myBg2 sectionHeight">
+﻿<div class="container-fluid myBg2" style="padding-top:25px">
     <div class="container">
-        <h3 class="jumbotron">Administrar los videos</h3>
+        <h3 class="jumbotron animateFromLeft myFontStyle1">Administrar los videos</h3>
         <hr />
-        <md-button class="md-primary md-raised" ng-click="addVideo($event)"><span class="glyphicon glyphicon-plus"></span> A&ntilde;adir video</md-button>
-        <md-button class="md-raised md-primary" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio</md-button>
+        <md-button class="md-primary md-raised animateFromRight" ng-click="addVideo($event)"><span class="glyphicon glyphicon-plus"></span> A&ntilde;adir video</md-button>
+        <md-button class="md-raised md-primary animateFromRight" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio</md-button>
         <hr />
         <div class="table-responsive">
-            <table class="table table-hover">
+            <table class="table table-hover animateShow" st-table="v" st-safe-src="videos">
                 <thead>
+                    <tr id="search">
+                        <th colspan="3">
+                            <input st-search placeholder="B&uacute;squeda" class="input-sm form-control" type="search" />
+                        </th>
+                    </tr>
                     <tr>
                         <th>Mostrar en Inicio</th>
                         <th>T&iacute;tulo</th>
@@ -17,7 +22,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="video in videos">
+                    <tr ng-repeat="video in v">
                         <td><input type="radio" name="mostrarInicio" ng-click="updateShowVideo($event,video)" ng-checked="{{video.isShow}}" /></td>
                         <td><a class="myTextColor4" ng-click="showVideo($index)">{{video.name}}</a></td>
                         <td><a class="videoList" ng-click="showVideo($index)"><img ng-src="{{video.img}}" /></a></td>
@@ -25,6 +30,13 @@
                         <td><md-button class="md-raised md-primary" ng-click="updateVideo($event,video)"><span class="glyphicon glyphicon-pencil"></span> Modificar</md-button></td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-center">
+                            <div st-pagination="" st-items-by-page="itemsByPage"></div>
+                        </td>
+                    </tr>
+                </tfoot>
             </table>
         </div>        
     </div>

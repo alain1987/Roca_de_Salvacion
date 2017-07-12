@@ -18,7 +18,7 @@ app.controller('adminBlogsController', ['$scope', '$mdDialog', 'blogService', 'p
         $location.path('/updateBlogSettings');
     };
 
-    $scope.openDeleteBlog = function (ev, id) {
+    $scope.openDeleteBlog = function (ev, id, index) {
         var confirm = $mdDialog.confirm()
                   .title('Confirma que desea eliminar este blog?')
                   .textContent('Si elimina el blog se eliminaran todas las noticias que tenga este')
@@ -29,7 +29,8 @@ app.controller('adminBlogsController', ['$scope', '$mdDialog', 'blogService', 'p
 
         $mdDialog.show(confirm).then(function () {
             blogService.deleteBlog(id).then(function (response) {
-                act();
+                $scope.blogs.splice(index, 1);
+                //act();
             }, function (error) {
                 alert(error.data.message);
             });

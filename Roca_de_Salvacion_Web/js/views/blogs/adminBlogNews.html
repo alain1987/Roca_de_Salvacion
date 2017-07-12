@@ -1,10 +1,10 @@
-﻿<div class="container personalContainer">
+﻿<div class="container personalContainer animateShow">
     <div>
         <h3 class="jumbotron">Noticias del Blog de {{authentication.userName}}</h3>
     </div>
     <br />
     <div>
-        <md-button class="md-raised md-primary" href="#/addBlogNews">Nueva Noticia <span class=" glyphicon glyphicon-plus"></span></md-button>
+        <md-button class="md-raised md-primary" href="#/addBlogNews">Nueva Noticia <span class="glyphicon glyphicon-plus"></span></md-button>
         <md-button class="md-raised md-primary" ng-click="home()">
             <span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio
         </md-button>
@@ -13,8 +13,13 @@
         <div class="col-sm-1 col-xs-1 colmd-1 col-lg-1"></div>
         <div class="col-sm-10 col-xs-10 colmd-10 col-lg-10">
             <div class="table-responsive">
-                <table class="table">
+                <table class="table" st-table="bn" st-safe-src="blogNews">
                     <thead>
+                        <tr id="search">
+                            <th colspan="2">
+                                <input st-search placeholder="B&uacute;squeda" class="input-sm form-control" type="search" />
+                            </th>
+                        </tr>
                         <tr>
                             <th>T&iacute;tulo</th>
                             <th>Accion</th>
@@ -22,12 +27,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="news in blogNews">
+                        <tr ng-repeat="news in bn">
                             <td>{{news.title}}</td>
-                            <td><md-button class="md-raised md-primary" ng-click="openDeleteBlogNews($event, news.id)">Eliminar <span class="glyphicon glyphicon-minus"></span></md-button></td>
+                            <td><md-button class="md-raised md-primary" ng-click="openDeleteBlogNews($event, news.id,$index)">Eliminar <span class="glyphicon glyphicon-minus"></span></md-button></td>
                             <td><md-button class="md-raised md-primary" ng-click="openUpdateBlogNews(news)">Modificar <span class="glyphicon glyphicon-pencil"></span></md-button></td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-center">
+                                <div st-pagination="" st-items-by-page="itemsByPage"></div>
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
         </div>

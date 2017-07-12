@@ -73,7 +73,6 @@
     <Content Include="Content\css\angular-material.layouts.ie_fixes.css" />
     <Content Include="Content\css\angular-material.layouts.min.css" />
     <Content Include="Content\css\angular-material.min.css" />
-    <Content Include="Content\data-table.css" />
     <Content Include="Content\images\Fondo-lila-luz-línea - Horizontal.jpg" />
     <Content Include="Content\images\Fondo-lila-luz-línea.jpg" />
     <Content Include="Content\images\icons\addShoppingCart.svg" />
@@ -177,6 +176,7 @@
     <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440 - Vertical.jpg" />
     <Content Include="Content\images\Manchas-fondo-luz-lila-1920x1440.jpg" />
     <Content Include="Content\mainImages\BlancoAzul.jpg" />
+    <Content Include="Content\mainImages\chat.jpg" />
     <Content Include="Content\mainImages\newsBackground.jpg" />
     <Content Include="Content\mainImages\NewsVertical.jpg" />
     <Content Include="Content\mainImages\PortadaVertical.jpg" />
@@ -205,6 +205,7 @@
     <Content Include="js\controllers\showImgAtHomeController.js" />
     <Content Include="js\controllers\showVideoController.js" />
     <Content Include="js\controllers\showVideosController.js" />
+    <Content Include="js\controllers\temp.js" />
     <Content Include="js\controllers\unauthorizedController.js" />
     <Content Include="js\controllers\updateBlogNewsController.js" />
     <Content Include="js\controllers\updateBlogSettingsController.js" />
@@ -304,8 +305,6 @@
     <Content Include="js\views\authentication\refresh.html" />
     <Content Include="js\views\authentication\tokens.html" />
     <Content Include="Scripts\authComplete.js" />
-    <Content Include="Scripts\data-table.js" />
-    <Content Include="Scripts\data-table.min.js" />
     <Content Include="Scripts\loading-bar.js" />
     <Content Include="Scripts\loading-bar.min.js" />
     <Content Include="Web.config" />

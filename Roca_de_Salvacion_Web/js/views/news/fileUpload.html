@@ -1,12 +1,12 @@
 ﻿
-<div class="container-fluid myBg2 sectionHeight">
+<div class="container-fluid myBg2 sectionHeight" style="padding-top:25px;">
     <div class="container">
-        <h3 class="jumbotron">Imagenes para subir al sitio</h3>
-        <md-button class="md-raised md-primary" ng-click="home()">
+        <h3 class="jumbotron animateShow myFontStyle1">Imagenes para subir al sitio</h3>
+        <md-button class="md-raised md-primary animateShow" ng-click="home()">
             <span class="glyphicon glyphicon-arrow-left"></span> Volver al inicio
         </md-button>
         <div class="table-responsive">
-            <table class="table table-hover">
+            <table class="table table-hover animateFromRight">
                 <thead>
                     <tr>
                         <td><b>T&iacute;tulo</b></td>
@@ -23,7 +23,7 @@
                 </tbody>
             </table>
         </div>
-        <div>
+        <div class="animateFromLeft">
             <input type="file" multiple ng-files="getTheFiles($files)" value="Seleccionar" />
             <md-button ng-disabled="!imagesrc.length" type="submit" md-no-ink="" style="width:200px;" class="md-raised md-primary" ng-click="uploadFiles()">Subir Imagen</md-button>
             <md-button ng-disabled="!imagesrc.length" type="submit" md-no-ink="" style="width:200px;" class="md-raised md-primary" ng-click="reset()">Limpiar</md-button>

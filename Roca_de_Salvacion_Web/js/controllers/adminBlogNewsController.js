@@ -26,7 +26,7 @@ app.controller('adminBlogNewsController', ['$scope', 'authService', 'blogService
         passDataService.set(null);
     };
     
-    $scope.openDeleteBlogNews = function (ev, id) {
+    $scope.openDeleteBlogNews = function (ev, id,index) {
         var confirm = $mdDialog.confirm()
                   .title('Confirma que desea eliminar este esta noticia del blog?')
                   .textContent('Si elimina el la noticia del blog despues no la podra recuperar')
@@ -37,7 +37,8 @@ app.controller('adminBlogNewsController', ['$scope', 'authService', 'blogService
 
         $mdDialog.show(confirm).then(function () {
             blogService.deleteBlogNews(id).then(function (response) {
-                act();
+                $scope.blogNews.splice(index, 1);
+                //act();
             }, function (error) {
                 alert(error.data.message);
             });

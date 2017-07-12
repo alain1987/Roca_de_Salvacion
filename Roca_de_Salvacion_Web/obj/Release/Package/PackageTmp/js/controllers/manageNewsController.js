@@ -5,7 +5,7 @@ app.controller('manageNewsController', ['$scope', 'newsService', 'passDataServic
     $scope.news = [];
     $scope.myNews = {};
     $scope.myArray = [];
-    $scope.animateClass = "page-enter";
+    //$scope.animateClass = "page-enter";
 
     function actualizar() {
         newsService.getAllNews().then(function (response) {
@@ -20,8 +20,8 @@ app.controller('manageNewsController', ['$scope', 'newsService', 'passDataServic
     //get para unosd
     //add--chequear si se manda algun valor para la gallery
     $scope.publish = function () {
-        galleryAction.set({ 'action': 'add' });
-        $location.path('/gallery');
+        //galleryAction.set({ 'action': 'add' });
+        $location.path('/addNews');
     }
     //delete
     $scope.deleteNews = function (news) {
