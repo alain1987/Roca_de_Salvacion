@@ -8,7 +8,7 @@ app.controller('changePasswordController', ['$scope', 'passwordService', '$locat
         function isAuth() {
             if ($scope.userName == "" || $scope.userName == null) {
                 alert("Debe iniciar sesion para poder acceder a esta seccion");
-                $location.path('home');
+                $location.path('/login');
             }
         }
 

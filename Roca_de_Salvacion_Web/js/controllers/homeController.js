@@ -11,6 +11,9 @@ app.controller('homeController', ['$scope', 'authService', 'indexService', '$loc
     $scope.slides = [];
     $scope.news = [];
 
+    $scope.miCuenta = function () {
+        $location.path('/changePassword');
+    };
         //images
     /*function show() {
         

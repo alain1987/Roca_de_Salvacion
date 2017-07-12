@@ -601,7 +601,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2017 17:15:06</publishTime>
     </File>
     <File Include="js/controllers/changePasswordController.js">
-      <publishTime>06/13/2017 16:27:41</publishTime>
+      <publishTime>07/12/2017 16:46:21</publishTime>
     </File>
     <File Include="js/controllers/chatController.js">
       <publishTime>06/12/2017 19:12:35</publishTime>
@@ -622,7 +622,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2017 20:20:50</publishTime>
     </File>
     <File Include="js/controllers/homeController.js">
-      <publishTime>07/07/2017 17:02:41</publishTime>
+      <publishTime>07/12/2017 16:47:31</publishTime>
     </File>
     <File Include="js/controllers/indexController.js">
       <publishTime>04/07/2017 15:55:39</publishTime>
