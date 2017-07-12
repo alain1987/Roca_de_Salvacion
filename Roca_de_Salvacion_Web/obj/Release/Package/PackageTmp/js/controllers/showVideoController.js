@@ -7,7 +7,7 @@ app.controller('showVideoController', ['$scope', 'myVideo', '$uibModalInstance',
        $scope.myVideo.urlVideo = $sce.trustAsHtml(myVideo.urlVideo);
 
        $scope.cancel = function () {
-           $uibModalInstance.hide();
+           $uibModalInstance.dismiss('cancel');
        };
 
 }]);

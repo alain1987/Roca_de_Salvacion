@@ -19,8 +19,8 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="video in v" ng-click="showVideo($index)">
-                        <td><a class="myTextColor4 myCursor" ng-click="showVideo($index)">{{video.name}}</a></td>
-                        <td><a class="videoList" ng-click="showVideo($index)"><img ng-src="{{video.img}}" /></a></td>
+                        <td><a class="myTextColor4 myCursor"> <!--ng-click="showVideo($index)"-->{{video.name}}</a></td>
+                        <td><a class="videoList"> <!--ng-click="showVideo($index)"--><img ng-src="{{video.img}}" /></a></td>
                     </tr>
                 </tbody>
                 <tfoot>
