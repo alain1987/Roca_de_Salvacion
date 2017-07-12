@@ -203,7 +203,7 @@ md-ink-bar{
 .myNews{
     border:1px lightgrey solid;
     padding:0px; 
-    height:227px;
+    height:461px;
     box-shadow:rgba(0,0,0,0.4) 5px 5px 3px;
     -webkit-box-shadow:rgba(0,0,0,0.4) 5px 5px 3px;
     -moz-box-shadow:rgba(0,0,0,0.4) 5px 5px 3px;
@@ -737,6 +737,9 @@ footer .glyphicon:hover{
             color:#112D4E;
         }
 
+        #newsHr{
+            display:none;
+        }
        /* #presentation h1{
             color:#3F72AF;
         }

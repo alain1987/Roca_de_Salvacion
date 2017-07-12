@@ -124,7 +124,7 @@
 </div>
 <!--Noticias-->
 <div class="container-fluid backgroundNews" id="news" style="padding-top:35px;">
-    <div class="container text-center sectionHeight">
+    <div class="container text-center">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20px 0px 20px 0px;">
                 <h1 class="myFontStyle1 myTextColor4 slideShowHide">Noticias</h1>
@@ -132,14 +132,16 @@
         </div>
         <br />
         <br />
-        <div class="myNewsContainer inline slideHide" ng-repeat="n in news">
+        <div class="myNewsContainer inline slideHide" ng-repeat="n in news" style="float:left;">
             <div class="myNews">
-                <img ng-src="{{n.urlImagen}}" height="127" style="width:100%;" />
+                <div style="height:381px;">
+                    <img ng-src="{{n.urlImagen}}" style="width:100%;height:auto; object-fit:contain;" />
+                </div>
                 <p class="myTextColor4 myFontStyle2">{{n.description}}</p>
                 <md-button class="md-raised md-primary buttonNews" ng-click="openNews($event,$index)">Leer Noticia completa</md-button>
             </div>
         </div>
-        <hr />
+        <hr id="newsHr"/>
         <div class="text-center slideHide">
             <md-button class="md-raised md-primary buttonNews" ng-click="allNews()"><span class="glyphicon glyphicon-list-alt"></span> | Ver mas noticias</md-button>
         </div>
