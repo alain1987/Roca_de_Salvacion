@@ -132,20 +132,26 @@
         </div>
         <br />
         <br />
-        <div class="myNewsContainer inline slideHide" ng-repeat="n in news" style="float:left;">
-            <div class="myNews">
-                <div style="height:381px;">
-                    <img ng-src="{{n.urlImagen}}" style="width:100%;height:auto; object-fit:contain;" />
+        <div class="row">
+            <div class="col-xs-1 col-sm-1 col-lg-1">&nbsp;
+            </div>
+            <div class="col-xs-11 col-sm-11 col-md-12 col-lg-11">
+                <div class="myNewsContainer inline slideHide" ng-repeat="n in news" style="float:left;">
+                    <div class="myNews">
+                        <div style="height:381px;">
+                            <img ng-src="{{n.urlImagen}}" style="width:100%;height:auto; object-fit:contain;" />
+                        </div>
+                        <p class="myTextColor4 myFontStyle2">{{n.description}}</p>
+                        <md-button class="md-raised md-primary buttonNews" ng-click="openNews($event,$index)">Leer Noticia completa</md-button>
+                    </div>
                 </div>
-                <p class="myTextColor4 myFontStyle2">{{n.description}}</p>
-                <md-button class="md-raised md-primary buttonNews" ng-click="openNews($event,$index)">Leer Noticia completa</md-button>
             </div>
         </div>
-        <hr id="newsHr"/>
-        <div class="text-center slideHide">
-            <md-button class="md-raised md-primary buttonNews" ng-click="allNews()"><span class="glyphicon glyphicon-list-alt"></span> | Ver mas noticias</md-button>
+            <hr id="newsHr" />
+            <div class="text-center slideHide">
+                <md-button class="md-raised md-primary buttonNews" ng-click="allNews()"><span class="glyphicon glyphicon-list-alt"></span> | Ver mas noticias</md-button>
+            </div>
         </div>
-    </div>
 </div>
 
 <!--Imagenes-->
