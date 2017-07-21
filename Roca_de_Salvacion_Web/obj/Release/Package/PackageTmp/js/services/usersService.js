@@ -30,7 +30,7 @@ app.factory('usersService', ['$http', 'ngAuthSettings', function ($http, ngAuthS
     };
 
     usersFactory.updateUser = function (user) {
-        return $http.put(ngAuthSettings.apiServiceBaseUri + "/api/Account/updateUser", user, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }).then(function (response) {
+        return $http.put(ngAuthSettings.apiServiceBaseUri + "/api/Account/updateUser", user).then(function (response) {
             return response;
         });
     };
