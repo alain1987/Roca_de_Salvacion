@@ -24,8 +24,8 @@
                 <tbody>
                     <tr ng-repeat="video in v">
                         <td><input type="radio" name="mostrarInicio" ng-click="updateShowVideo($event,video)" ng-checked="{{video.isShow}}" /></td>
-                        <td><a class="myTextColor4" ng-click="showVideo($index)">{{video.name}}</a></td>
-                        <td><a class="videoList" ng-click="showVideo($index)"><img ng-src="{{video.img}}" /></a></td>
+                        <td><a class="myTextColor4 myCursor" ng-click="showVideo(video.id)" >{{video.name}}</a></td>
+                        <td><a class="videoList" ng-click="showVideo(video.id)"><img ng-src="{{video.img}}" /></a></td>
                         <td><md-button class="md-raised md-primary" ng-click="deleteVideo($event,video.id)"><span class="glyphicon glyphicon-minus"></span> Eliminar</md-button></td>
                         <td><md-button class="md-raised md-primary" ng-click="updateVideo($event,video)"><span class="glyphicon glyphicon-pencil"></span> Modificar</md-button></td>
                     </tr>

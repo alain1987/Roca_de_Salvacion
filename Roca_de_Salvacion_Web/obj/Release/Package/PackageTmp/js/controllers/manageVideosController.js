@@ -65,7 +65,7 @@ app.controller('manageVideosController', ['$scope', 'videosService', '$mdDialog'
     $scope.addVideo = function (ev) {
         $mdDialog.show({
             controller: addVideoDialogController,
-            templateUrl: 'videos/videosDialogs/addVideoDialog.html',
+            templateUrl: 'js/views/videos/videosDialogs/addVideoDialog.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
@@ -169,8 +169,7 @@ app.controller('manageVideosController', ['$scope', 'videosService', '$mdDialog'
     };
 
     //var $ctrl = this;
-    $scope.showVideo = function (index) {
-        
+    $scope.showVideo = function (id) {
         var modalInstance = $uibModal.open({
           //  animation: $ctrl.animationsEnabled,
             ariaLabelledBy: 'modal-title',
@@ -182,7 +181,14 @@ app.controller('manageVideosController', ['$scope', 'videosService', '$mdDialog'
             scope:$scope,
             resolve:{
                 myVideo: function () {
-                    return $scope.videos[index];
+                    var vid;
+                    for (var i = 0; i < $scope.videos.length; i++) {
+                        if ($scope.videos[i].id == id) {
+                            vid = $scope.videos[i];
+                            break;
+                        }
+                    }
+                    return vid;
                 }
             }
         });

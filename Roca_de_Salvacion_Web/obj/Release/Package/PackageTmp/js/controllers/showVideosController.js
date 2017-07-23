@@ -35,7 +35,14 @@ app.controller('showVideosController', ['$scope', 'videosService', '$mdDialog', 
     allVideos();
 
     $scope.showVideo = function (index) {
-
+        var realIndex
+        var m = parseInt($("li[class*='active'] a").text());
+        if (m > 1) {
+            realIndex = ((10 * (m-1))+index);
+        } else {
+            realIndex = index;
+        }
+        
         var modalInstance = $uibModal.open({
             //  animation: $ctrl.animationsEnabled,
             ariaLabelledBy: 'modal-title',
@@ -47,7 +54,7 @@ app.controller('showVideosController', ['$scope', 'videosService', '$mdDialog', 
             scope: $scope,
             resolve: {
                 myVideo: function () {
-                    return $scope.videos[index];
+                    return $scope.videos[realIndex];
                 }
             }
         });

@@ -643,7 +643,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2017 20:23:03</publishTime>
     </File>
     <File Include="js/controllers/manageVideosController.js">
-      <publishTime>06/09/2017 15:51:56</publishTime>
+      <publishTime>07/22/2017 19:55:01</publishTime>
     </File>
     <File Include="js/controllers/modifyUserDialogController.js">
       <publishTime>03/28/2017 11:16:24</publishTime>
@@ -673,7 +673,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2017 21:41:36</publishTime>
     </File>
     <File Include="js/controllers/showVideosController.js">
-      <publishTime>07/11/2017 21:24:41</publishTime>
+      <publishTime>07/22/2017 21:36:07</publishTime>
     </File>
     <File Include="js/controllers/signupController.js">
       <publishTime>07/10/2017 18:17:43</publishTime>
@@ -862,10 +862,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2017 20:38:24</publishTime>
     </File>
     <File Include="js/views/videos/manageVideos.html">
-      <publishTime>07/11/2017 20:47:07</publishTime>
+      <publishTime>07/22/2017 19:58:56</publishTime>
     </File>
     <File Include="js/views/videos/showVideos.html">
-      <publishTime>07/12/2017 16:34:45</publishTime>
+      <publishTime>07/22/2017 21:28:25</publishTime>
     </File>
     <File Include="js/views/videos/videosDialogs/addVideoDialog.html">
       <publishTime>05/26/2017 09:47:07</publishTime>
