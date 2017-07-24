@@ -101,7 +101,7 @@ app.controller('manageVideosController', ['$scope', 'videosService', '$mdDialog'
     $scope.updateVideo = function (ev,video) {
         $mdDialog.show({
             controller: updateVideoDialogController,
-            templateUrl: 'videos/videosDialogs/updateVideoDialog.html',
+            templateUrl: 'js/views/videos/videosDialogs/updateVideoDialog.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
