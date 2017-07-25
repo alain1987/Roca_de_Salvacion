@@ -16,7 +16,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/05/2017 09:59:26</publishTime>
     </File>
     <File Include="bin/Roca_de_Salvacion_Web.dll">
-      <publishTime>07/25/2017 11:29:34</publishTime>
+      <publishTime>07/25/2017 19:34:43</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>04/24/2017 11:35:18</publishTime>
@@ -661,7 +661,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/10/2017 18:10:37</publishTime>
     </File>
     <File Include="js/controllers/showAtGallery.js">
-      <publishTime>06/15/2017 11:59:42</publishTime>
+      <publishTime>07/25/2017 19:34:16</publishTime>
     </File>
     <File Include="js/controllers/showGalleryController.js">
       <publishTime>06/13/2017 17:06:59</publishTime>

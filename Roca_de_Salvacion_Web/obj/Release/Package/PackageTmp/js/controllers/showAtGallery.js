@@ -24,7 +24,6 @@ app.controller('showAtGalleryController', ['$scope', 'galleryService', 'ngAuthSe
                     list.push($scope.images[i]);
                 }
             }
-            console.log(list);
             galleryService.showAtGallery(list).then(function (response) {
                 $location.path('/showGallery');
             }, function (error) {
