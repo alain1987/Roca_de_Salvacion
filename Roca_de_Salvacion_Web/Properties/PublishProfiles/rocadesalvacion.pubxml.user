@@ -16,7 +16,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/05/2017 09:59:26</publishTime>
     </File>
     <File Include="bin/Roca_de_Salvacion_Web.dll">
-      <publishTime>07/20/2017 10:30:39</publishTime>
+      <publishTime>07/25/2017 11:29:34</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>04/24/2017 11:35:18</publishTime>
@@ -799,10 +799,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2017 16:47:01</publishTime>
     </File>
     <File Include="js/views/blogs/blog.html">
-      <publishTime>07/21/2017 15:58:32</publishTime>
+      <publishTime>07/25/2017 11:28:42</publishTime>
     </File>
     <File Include="js/views/blogs/chooseBlog.html">
-      <publishTime>07/11/2017 16:41:43</publishTime>
+      <publishTime>07/25/2017 13:53:04</publishTime>
     </File>
     <File Include="js/views/blogs/createBlog.html">
       <publishTime>07/11/2017 16:45:12</publishTime>
@@ -847,7 +847,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2017 20:29:36</publishTime>
     </File>
     <File Include="js/views/news/newsDialog.html">
-      <publishTime>07/11/2017 20:02:27</publishTime>
+      <publishTime>07/25/2017 14:44:07</publishTime>
     </File>
     <File Include="js/views/news/showAtGallery.html">
       <publishTime>07/11/2017 20:32:09</publishTime>

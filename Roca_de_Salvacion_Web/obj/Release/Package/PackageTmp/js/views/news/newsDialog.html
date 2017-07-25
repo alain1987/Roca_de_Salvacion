@@ -15,7 +15,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <a data-fancybox ng-href="{{myNews.urlImagen}}">
                             <img style="margin: auto; max-width: 80%;" ng-src="{{myNews.urlImagen}}">
+                                </a>
+                            <p class="myFontStyle2">Hacer click en la imagen para verla</p>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                             <h2>{{myNews.title}}</h2>
@@ -28,6 +31,7 @@
                         </div>
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                         </div>
+                    </div>
                 </div>
             </div>
         </md-dialog-content>
