@@ -121,7 +121,7 @@ app.config(['$routeProvider',/* '$locationProvider',*/ function ($routeProvider/
     }]);
 
 //var serviceBase = 'http://localhost:15161';
-    var serviceBase = 'http://rocadesalvacionapi.azurewebsites.net';
+    var serviceBase = 'https://rocadesalvacionapi.azurewebsites.net';
 
     app.constant('ngAuthSettings', {
         apiServiceBaseUri: serviceBase,

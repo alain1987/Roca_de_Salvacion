@@ -1,6 +1,11 @@
 ﻿body {
     background-color: transparent;
 }
+.sectionHeightMain {
+        height: 640px !important;
+    }
+
+
 /*Tipo de fuentes*/
 .myFontStyle1{
     font-family: 'Satisfy', cursive;
@@ -633,6 +638,15 @@ footer .glyphicon:hover{
     .sectionHeight {
             height: auto;
         }
+    .nav > li > a:focus, .nav > li > a:hover {
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #F9F7F7;
+    }
 }
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */

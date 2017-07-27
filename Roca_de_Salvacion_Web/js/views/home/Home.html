@@ -2,7 +2,7 @@
     <source src="../../../Content/video/VideoPortada.webm"/>
 </video>-->
 
-<div class="container-fluid sectionHeight videoContainerBackground">
+<div class="container-fluid sectionHeightMain videoContainerBackground">
     <div>
         <nav id="menu" class="navbar1 transparent navbar-fixed-top">
             <div class="container" style="margin-left: 10px;">
@@ -75,7 +75,7 @@
                     "Mi mejor amigo" y "Dame m&aacute;s amor", en el 2007 grabaron "Con Alabanza" y "Se hizo la luz", en 2009 "Apariencias", en 2011 "Cuando yo canto", y actualmente
                     se encuentran grabando el CD "Historias".
                     <br />
-                    En 1997 participaron el el Festival Nacional de la M&uacute;sica cristiana en Cuba ganando el 1er premio en la categor&iacute;a de Solista Vocal(Frank Pe&ntilde;a) y 
+                    En 1997 participaron en el Festival Nacional de la M&uacute;sica cristiana en Cuba ganando el 1er premio en la categor&iacute;a de Solista Vocal(Frank Pe&ntilde;a) y 
                     primer premio en la categor&iacute;a de "D&uacute;o Vocal" (Frank y Rosa) con la canci&oacute;n "Un Milagro". En 1999 obtuvieron nuevamente el 1er premio en la nueva edici&oacute;n del festival con la
                     canci&oacute;n "Qu&eacute; nos pasa", que desde entonces ha sido &iacute;cono en cada una de sus presentaciones. En ese mismo a&ntilde;o 1999 por la calidad sostenida del ministerio y por el alcance 
                     evangel&iacute;stico en cada uno de sus conciertos fueron declarados "Ministerio Nacional".
@@ -85,7 +85,7 @@
                     <br />
                     Frank y Rosa son graduados, despu&eacute;s de 4 a&ntilde;os de "Bachiller en Teolog&iacute;a y Biblia" y luego estudiaron 2 a&ntilde;os m&aacute;s de "Licenciatura en Teolog&iacute;a y Biblia".
                     <br />
-                    Participaron en la Celebraci&oacute;n Evang&eacute;lica de Camag&uml;ey, en otras celebraciones en la sala Polivalente y en el Teatro Principal. Tambi&eacute;n participaron en una celebraci&oacute;n evang&eacute;lica
+                    Participaron en la Celebraci&oacute;n Evang&eacute;lica de Camag&uuml;ey, en otras celebraciones en la sala Polivalente y en el Teatro Principal. Tambi&eacute;n participaron en una celebraci&oacute;n evang&eacute;lica
                     en el Teatro de Ranchuelos.
                     <br />
                     En el a&ntilde;o 2001 hicieron una gira por 22 estados de los Estados Unidos.
@@ -165,7 +165,7 @@
             <div class="col-xs-11 col-sm-11 col-md-12 col-lg-11">
                 <div class="myNewsContainer inline slideHide" ng-repeat="n in news" style="float:left;">
                     <div class="myNews">
-                        <div style="height:381px;">
+                        <div style="height:361px;">
                             <img ng-src="{{n.urlImagen}}" style="width:100%;height:auto; object-fit:contain;-o-object-fit:contain;" />
                         </div>
                         <p class="myTextColor4 myFontStyle2">{{n.description}}</p>
@@ -197,7 +197,9 @@
             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                 <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                     <div uib-slide ng-repeat="slide in slides" index="$index">
+                        <a data-fancybox ng-href="{{base+slide.fileName}}">
                         <img ng-src="{{base+slide.fileName}}" style="margin:auto; max-width:60%;height:400px; ">
+                        </a>
                         <div class="carousel-caption">
                             <h4 class="myFontStyle2">Imagen {{$index+1}}</h4>
                         </div>
