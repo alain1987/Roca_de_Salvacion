@@ -1,10 +1,10 @@
 ﻿<div class="container-fluid myBg1" style="height:auto;">
         <div class="container sectionHeight">
-            <div class="row animateShow" style="padding-left:5px;">
+            <div class="row" style="padding-left:5px;">
                 <h3 class="jumbotron myFontStyle1">Bienvenido a nuestro chat: {{user}}</h3>
                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                    <h2 class="myTextColor4 myFontStyle2">Nosotros</h2>
-                    <p class="myTextColor4" tyle="padding:30px 0px 30px 30px;">
+                    <h2 class="myTextColor4 myFontStyle2 animateShow">Nosotros</h2>
+                    <p class="myTextColor4 animateFromLeft" tyle="padding:30px 0px 30px 30px;">
                         <i>
                             En&iacute;anos tus mensajes de una manera m&aacute;s directa, plant&eacute;anos tus inquietudes, 
                             con&oacute;cenos mejor o simplemente cont&aacute;ctanos si deseas nuestra participaci&oacute;n 
@@ -14,25 +14,36 @@
                             matrimonios y familias, conciertos, conferencias...
                         </i>
                     </p>
-                    <md-button class="md-raised md-primary" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Inicio</md-button>
+                    <md-button class="md-raised md-primary animateFromLeft" ng-click="home()"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Inicio</md-button>
+                    <hr />
+                    <div class="fb-messengermessageus animateFromLeft"
+                         messenger_app_id="129952394279896"
+                         page_id="361781737359688"
+                         color="white"
+                         size="xlarge">
+                    </div> 
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"    >
-                    <img src="../../../Content/mainImages/chat.jpg" class="img-responsive img-rounded portada" />
+                    <img src="../../../Content/mainImages/chat.jpg" class="img-responsive img-rounded portada animateFromRight" />
                 </div>
         </div>
     </div>
 </div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '129952394279896',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/58ed5158f7bbaa72709c5c49/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/es_ES/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 </script>
-<!--End of Tawk.to Script-->
