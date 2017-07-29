@@ -820,7 +820,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/28/2017 15:07:33</publishTime>
     </File>
     <File Include="js/views/home/Home.html">
-      <publishTime>07/28/2017 15:13:04</publishTime>
+      <publishTime>07/28/2017 15:17:54</publishTime>
     </File>
     <File Include="js/views/index.html">
       <publishTime>06/19/2017 16:20:14</publishTime>
